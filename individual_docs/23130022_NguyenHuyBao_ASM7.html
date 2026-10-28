@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="selenium.base" href="https://mail.google.com/" />
+<title>23130022_NguyenHuyBao_ASM7</title></head><body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_VIS_01: Kiem tra hien thi icon Star mau xam va doi mau vang khi click</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]//span[contains(@class,'T-KT') and not(contains(@class,'T-KT-Jp'))]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//span[contains(@class,'T-KT')]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]//*[contains(@class,'T-KT-Jp') or (contains(translate(@aria-label,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'starred') and not(contains(translate(@aria-label,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'not starred'))) or (contains(@aria-label,'gắn dấu sao') and not(contains(@aria-label,'Chưa')))]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//span[contains(@class,'T-KT')]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_VIS_02: Kiem tra giao dien Popup chon thoi gian Snooze</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//div[@role='button'][@aria-label='Snooze' or @data-tooltip='Snooze' or @aria-label='Tạm ẩn' or @data-tooltip='Tạm ẩn' or @aria-label='Tạm dừng' or @data-tooltip='Tạm dừng' or @aria-label='Tạm hoãn' or @data-tooltip='Tạm hoãn' or @aria-label='Báo lại' or @data-tooltip='Báo lại']</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=//div[@role='button'][@aria-label='Snooze' or @data-tooltip='Snooze' or @aria-label='Tạm ẩn' or @data-tooltip='Tạm ẩn' or @aria-label='Tạm dừng' or @data-tooltip='Tạm dừng' or @aria-label='Tạm hoãn' or @data-tooltip='Tạm hoãn' or @aria-label='Báo lại' or @data-tooltip='Báo lại']</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Snooze until') or contains(text(),'Tạm ẩn cho đến')]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_VIS_03: Kiem tra hien thi Thanh cong cu Thao tac hang luat (Bulk Bar)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>pause</td><td>500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//div[@role='button'][@act='10' or @aria-label='Delete' or @data-tooltip='Delete' or @aria-label='Xóa' or @data-tooltip='Xóa']</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//div[@role='button'][@act='7' or @aria-label='Archive' or @data-tooltip='Archive' or @aria-label='Lưu trữ' or @data-tooltip='Lưu trữ']</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//div[@role='button'][@act='1' or @act='2' or @aria-label='Mark as read' or @data-tooltip='Mark as read' or @aria-label='Mark as unread' or @data-tooltip='Mark as unread' or @aria-label='Đánh dấu là đã đọc' or @aria-label='Đánh dấu là chưa đọc']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_VIS_04: Kiem tra hien thi Toast Message thong bao kem nut Undo</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@role='button'][@act='10' or @aria-label='Delete' or @data-tooltip='Delete' or @aria-label='Xóa' or @data-tooltip='Xóa']</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//span[@id='link_undo' or (contains(@class,'bAo') and (contains(.,'Undo') or contains(.,'Hoàn tác')))]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_VAL_01: Kiem tra bat loi chon thoi gian Snooze o ngay qua khu</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@role='button'][@aria-label='Snooze' or @data-tooltip='Snooze' or @aria-label='Tạm ẩn' or @data-tooltip='Tạm ẩn' or @aria-label='Tạm dừng' or @data-tooltip='Tạm dừng' or @aria-label='Tạm hoãn' or @data-tooltip='Tạm hoãn' or @aria-label='Báo lại' or @data-tooltip='Báo lại']</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[contains(text(),'Pick date') or contains(text(),'Select date') or contains(text(),'Chọn ngày và thời gian')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[contains(text(),'Chọn ngày và thời gian') or contains(text(),'Pick date') or contains(text(),'Select date')]/ancestor::div[.//input][1]//input)[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//*[contains(text(),'Chọn ngày và thời gian') or contains(text(),'Pick date') or contains(text(),'Select date')]/ancestor::div[.//input][1]//input)[1]</td><td>01 thg 1, 2020</td></tr>
+<tr><td>sendKeys</td><td>xpath=(//*[contains(text(),'Chọn ngày và thời gian') or contains(text(),'Pick date') or contains(text(),'Select date')]/ancestor::div[.//input][1]//input)[1]</td><td>${KEY_TAB}</td></tr>
+<tr><td>pause</td><td>500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Lưu' or normalize-space(text())='Save'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>verifyVisible</td><td>xpath=(//*[normalize-space(text())='Lưu' or normalize-space(text())='Save'])[last()]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_VAL_02: Kiem tra bat loi de trong ngay gio trong Custom Snooze</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@role='button'][@aria-label='Snooze' or @data-tooltip='Snooze' or @aria-label='Tạm ẩn' or @data-tooltip='Tạm ẩn' or @aria-label='Tạm dừng' or @data-tooltip='Tạm dừng' or @aria-label='Tạm hoãn' or @data-tooltip='Tạm hoãn' or @aria-label='Báo lại' or @data-tooltip='Báo lại']</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[contains(text(),'Pick date') or contains(text(),'Select date') or contains(text(),'Chọn ngày và thời gian')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[contains(text(),'Chọn ngày và thời gian') or contains(text(),'Pick date') or contains(text(),'Select date')]/ancestor::div[.//input][1]//input)[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//*[contains(text(),'Chọn ngày và thời gian') or contains(text(),'Pick date') or contains(text(),'Select date')]/ancestor::div[.//input][1]//input)[1]</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//*[contains(text(),'Chọn ngày và thời gian') or contains(text(),'Pick date') or contains(text(),'Select date')]/ancestor::div[.//input][1]//input)[2]</td><td></td></tr>
+<tr><td>sendKeys</td><td>xpath=(//*[contains(text(),'Chọn ngày và thời gian') or contains(text(),'Pick date') or contains(text(),'Select date')]/ancestor::div[.//input][1]//input)[2]</td><td>${KEY_TAB}</td></tr>
+<tr><td>pause</td><td>500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Lưu' or normalize-space(text())='Save'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>verifyVisible</td><td>xpath=(//*[normalize-space(text())='Lưu' or normalize-space(text())='Save'])[last()]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_VAL_03: Chon tat ca email tren 1 trang bang checkbox tong (bien 50 email)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//div[@gh='tm']//span[@role='checkbox'] | //div[@gh='mtb']//span[@role='checkbox'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//div[@gh='tm']//span[@role='checkbox'] | //div[@gh='mtb']//span[@role='checkbox'])[1][@aria-checked='true']</td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=//div[@role='main']//tr[contains(@class,'zA')]//div[@role='checkbox'][@aria-checked='false']</td><td></td></tr>
+<tr><td>echo</td><td>Banner chi hien khi tab dang xem co &gt; 50 email</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//span[contains(normalize-space(.),'on this page are selected') or contains(normalize-space(.),'trên trang này')])[last()]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@gh='tm']//span[@role='checkbox'] | //div[@gh='mtb']//span[@role='checkbox'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_VAL_04: Bo chon hang loat khi bo tich Checkbox tong</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//div[@gh='tm']//span[@role='checkbox'] | //div[@gh='mtb']//span[@role='checkbox'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//div[@gh='tm']//span[@role='checkbox'] | //div[@gh='mtb']//span[@role='checkbox'])[1][@aria-checked='true']</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@gh='tm']//span[@role='checkbox'] | //div[@gh='mtb']//span[@role='checkbox'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//div[@gh='tm']//span[@role='checkbox'] | //div[@gh='mtb']//span[@role='checkbox'])[1][@aria-checked='false']</td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=//div[@role='main']//tr[contains(@class,'zA')]//div[@role='checkbox'][@aria-checked='true']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_VAL_05: Kiem tra nhap gio sai cu phap trong Custom Snooze (99:99)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@role='button'][@aria-label='Snooze' or @data-tooltip='Snooze' or @aria-label='Tạm ẩn' or @data-tooltip='Tạm ẩn' or @aria-label='Tạm dừng' or @data-tooltip='Tạm dừng' or @aria-label='Tạm hoãn' or @data-tooltip='Tạm hoãn' or @aria-label='Báo lại' or @data-tooltip='Báo lại']</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[contains(text(),'Pick date') or contains(text(),'Select date') or contains(text(),'Chọn ngày và thời gian')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[contains(text(),'Chọn ngày và thời gian') or contains(text(),'Pick date') or contains(text(),'Select date')]/ancestor::div[.//input][1]//input)[2]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//*[contains(text(),'Chọn ngày và thời gian') or contains(text(),'Pick date') or contains(text(),'Select date')]/ancestor::div[.//input][1]//input)[2]</td><td>99:99</td></tr>
+<tr><td>sendKeys</td><td>xpath=(//*[contains(text(),'Chọn ngày và thời gian') or contains(text(),'Pick date') or contains(text(),'Select date')]/ancestor::div[.//input][1]//input)[2]</td><td>${KEY_TAB}</td></tr>
+<tr><td>pause</td><td>500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Lưu' or normalize-space(text())='Save'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>verifyVisible</td><td>xpath=(//*[normalize-space(text())='Lưu' or normalize-space(text())='Save'])[last()]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_FUN_01: Thao tac Danh dau sao (Star) 1 email</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//span[contains(@class,'T-KT')]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]//*[contains(@class,'T-KT-Jp') or (contains(translate(@aria-label,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'starred') and not(contains(translate(@aria-label,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'not starred'))) or (contains(@aria-label,'gắn dấu sao') and not(contains(@aria-label,'Chưa')))]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//span[contains(@class,'T-KT')]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_FUN_02: Thao tac Bo danh dau sao (Unstar) 1 email</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//span[contains(@class,'T-KT')]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]//*[contains(@class,'T-KT-Jp') or (contains(translate(@aria-label,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'starred') and not(contains(translate(@aria-label,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'not starred'))) or (contains(@aria-label,'gắn dấu sao') and not(contains(@aria-label,'Chưa')))]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//span[contains(@class,'T-KT')]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]//span[contains(@class,'T-KT') and not(contains(@class,'T-KT-Jp'))]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_FUN_03: Danh dau / Bo danh dau Quan trong (Important)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id=':2r']/div</td><td></td></tr>
+<tr><td>pause</td><td>200</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//div[normalize-space(text())='Đánh dấu là quan trọng' or normalize-space(text())='Mark as important'])[last()]</td><td></td></tr>
+<tr><td>verifyText</td><td>xpath=(//div[normalize-space(text())='Đánh dấu là quan trọng' or normalize-space(text())='Mark as important'])[last()]</td><td>Đánh dấu là quan trọng</td></tr>
+<tr><td>pause</td><td>200</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[normalize-space(text())='Đánh dấu là quan trọng' or normalize-space(text())='Mark as important'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>200</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id=':2r']/div</td><td></td></tr>
+<tr><td>pause</td><td>200</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//div[normalize-space(text())='Đánh dấu là không quan trọng' or normalize-space(text())='Mark as not important'])[last()]</td><td></td></tr>
+<tr><td>verifyText</td><td>xpath=(//div[normalize-space(text())='Đánh dấu là không quan trọng' or normalize-space(text())='Mark as not important'])[last()]</td><td>Đánh dấu là không quan trọng</td></tr>
+<tr><td>pause</td><td>200</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[normalize-space(text())='Đánh dấu là không quan trọng' or normalize-space(text())='Mark as not important'])[last()]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_FUN_04: Snooze email den moc Ngay mai (Tomorrow)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@role='button'][@aria-label='Snooze' or @data-tooltip='Snooze' or @aria-label='Tạm ẩn' or @data-tooltip='Tạm ẩn' or @aria-label='Tạm dừng' or @data-tooltip='Tạm dừng' or @aria-label='Tạm hoãn' or @data-tooltip='Tạm hoãn' or @aria-label='Báo lại' or @data-tooltip='Báo lại']</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[contains(text(),'Tomorrow') or contains(text(),'Ngày mai')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[(contains(@class,'bAq') or @role='alert') and (contains(.,'nooze') or contains(.,'tạm ẩn') or contains(.,'Tạm ẩn') or contains(.,'tạm dừng') or contains(.,'Tạm dừng') or contains(.,'tạm hoãn') or contains(.,'Tạm hoãn'))]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_FUN_05: Snooze email den moc Next week</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@role='button'][@aria-label='Snooze' or @data-tooltip='Snooze' or @aria-label='Tạm ẩn' or @data-tooltip='Tạm ẩn' or @aria-label='Tạm dừng' or @data-tooltip='Tạm dừng' or @aria-label='Tạm hoãn' or @data-tooltip='Tạm hoãn' or @aria-label='Báo lại' or @data-tooltip='Báo lại']</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[contains(text(),'Next week') or contains(text(),'Tuần sau')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[(contains(@class,'bAq') or @role='alert') and (contains(.,'nooze') or contains(.,'tạm ẩn') or contains(.,'Tạm ẩn') or contains(.,'tạm dừng') or contains(.,'Tạm dừng') or contains(.,'tạm hoãn') or contains(.,'Tạm hoãn'))]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_FUN_06: Snooze email voi Ngay &amp; Gio tuy chinh</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@role='button'][@aria-label='Snooze' or @data-tooltip='Snooze' or @aria-label='Tạm ẩn' or @data-tooltip='Tạm ẩn' or @aria-label='Tạm dừng' or @data-tooltip='Tạm dừng' or @aria-label='Tạm hoãn' or @data-tooltip='Tạm hoãn' or @aria-label='Báo lại' or @data-tooltip='Báo lại']</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[contains(text(),'Pick date') or contains(text(),'Select date') or contains(text(),'Chọn ngày và thời gian')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Lưu' or normalize-space(text())='Save'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[(contains(@class,'bAq') or @role='alert') and (contains(.,'nooze') or contains(.,'tạm ẩn') or contains(.,'Tạm ẩn') or contains(.,'tạm dừng') or contains(.,'Tạm dừng') or contains(.,'tạm hoãn') or contains(.,'Tạm hoãn'))]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_FUN_07: Email bi Snooze an khoi Inbox va xuat hien trong muc Snoozed</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>storeText</td><td>xpath=(//tr[contains(@class,'zA')])[1]//span[@class='bog']</td><td>subj</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@role='button'][@aria-label='Snooze' or @data-tooltip='Snooze' or @aria-label='Tạm ẩn' or @data-tooltip='Tạm ẩn' or @aria-label='Tạm dừng' or @data-tooltip='Tạm dừng' or @aria-label='Tạm hoãn' or @data-tooltip='Tạm hoãn' or @aria-label='Báo lại' or @data-tooltip='Báo lại']</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[contains(text(),'Tomorrow') or contains(text(),'Ngày mai')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]//span[@class='bog' and normalize-space(.)='${subj}']</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#snoozed</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//tr[contains(@class,'zA')]//span[@class='bog' and normalize-space(.)='${subj}']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_FUN_08: Chon nhieu email bang checkbox rieng le (Bulk select)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[2]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>pause</td><td>800</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]//div[@role='checkbox'][@aria-checked='true']</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[2]//div[@role='checkbox'][@aria-checked='true']</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//div[@role='button'][@aria-label='Delete' or @data-tooltip='Delete' or @aria-label='Xóa' or @data-tooltip='Xóa']</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[2]//div[@role='checkbox']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_FUN_09: Danh dau Da doc / Chua doc hang loat (Bulk Mark Read/Unread)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[2]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>pause</td><td>500</td><td></td></tr>
+<tr><td>echo</td><td>2 email dau phai CHUA DOC -&gt; nut Danh dau la da doc dang hien</td><td></td></tr>
+<tr><td>verifyVisible</td><td>xpath=//div[@role='button'][@act='1']</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@role='button'][@act='1']</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyVisible</td><td>xpath=//div[@role='button'][@act='2']</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@role='button'][@act='2']</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyVisible</td><td>xpath=//div[@role='button'][@act='1']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_FUN_10: Xoa hang luat email chuyen vao Thung rac (Bulk Delete)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[2]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>pause</td><td>500</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@role='button'][@act='10' or @aria-label='Delete' or @data-tooltip='Delete' or @aria-label='Xóa' or @data-tooltip='Xóa']</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[(contains(@class,'bAq') or @role='alert') and (contains(.,'Trash') or contains(.,'Thùng rác'))]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_FUN_11: Luu tru hang luat email (Bulk Archive)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[2]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>pause</td><td>500</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@role='button'][@act='7' or @aria-label='Archive' or @data-tooltip='Archive' or @aria-label='Lưu trữ' or @data-tooltip='Lưu trữ']</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[(contains(@class,'bAq') or @role='alert') and (contains(.,'archived') or contains(.,'lưu trữ') or contains(.,'Lưu trữ'))]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_FUN_12: Gan Nhan 'Work' hang loat cho 2 email (Bulk Apply Label)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[2]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>pause</td><td>500</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@role='button'][@aria-label='Labels' or @data-tooltip='Labels' or @aria-label='Nhãn' or @data-tooltip='Nhãn' or @aria-label='Gắn nhãn' or @data-tooltip='Gắn nhãn']</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//div[@role='menu']</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='menu']//div[@role='menuitemcheckbox'][normalize-space(.)='Work'])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='menu']//*[normalize-space(text())='Apply' or normalize-space(text())='Áp dụng'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]//*[normalize-space(text())='Work']</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[2]//*[normalize-space(text())='Work']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_NAV_01: Kiem tra nut Undo khoi phuc email ngay sau khi Bulk Delete</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@role='button'][@act='10' or @aria-label='Delete' or @data-tooltip='Delete' or @aria-label='Xóa' or @data-tooltip='Xóa']</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=//span[@id='link_undo' or (contains(@class,'bAo') and (contains(.,'Undo') or contains(.,'Hoàn tác')))]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[(contains(@class,'bAq') or @role='alert') and (contains(.,'undone') or contains(.,'Undone') or contains(.,'hoàn tác') or contains(.,'Hoàn tác') or contains(.,'moved to Inbox') or contains(.,'Inbox'))]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_NAV_02: Truy cap danh muc Snoozed thuc hien Un-snooze ve Inbox</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#snoozed</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//div[@role='checkbox']</td><td></td></tr>
+<tr><td>pause</td><td>500</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@role='button'][@aria-label='Snooze' or @data-tooltip='Snooze' or @aria-label='Tạm ẩn' or @data-tooltip='Tạm ẩn' or @aria-label='Tạm dừng' or @data-tooltip='Tạm dừng' or @aria-label='Tạm hoãn' or @data-tooltip='Tạm hoãn' or @aria-label='Báo lại' or @data-tooltip='Báo lại']</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Bỏ tạm ẩn' or normalize-space(text())='Unsnooze'])[last()]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Bỏ tạm ẩn' or normalize-space(text())='Unsnooze'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[(contains(@class,'bAq') or @role='alert') and (contains(.,'nsnooze') or contains(.,'Bỏ tạm') or contains(.,'bỏ tạm') or contains(.,'Inbox') or contains(.,'Hộp thư đến'))]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_10_NAV_04: Chon tat ca hoi thoai khop voi ket qua tim kiem</td></tr></thead><tbody>
+<tr><td>store</td><td>in:anywhere</td><td>query</td></tr>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//input[@name='q']</td><td>10000</td></tr>
+<tr><td>type</td><td>xpath=//input[@name='q']</td><td>${query}</td></tr>
+<tr><td>sendKeys</td><td>xpath=//input[@name='q']</td><td>${KEY_ENTER}</td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@gh='tm']//span[@role='checkbox'] | //div[@gh='mtb']//span[@role='checkbox'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>echo</td><td>Link chi hien khi ket qua tim kiem &gt; 50 thu</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[contains(normalize-space(.),'Chọn tất cả') and contains(normalize-space(.),'hội thoại')] | //span[contains(normalize-space(.),'Select all') and contains(normalize-space(.),'conversations')])[last()]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//span[contains(normalize-space(.),'Chọn tất cả') and contains(normalize-space(.),'hội thoại')] | //span[contains(normalize-space(.),'Select all') and contains(normalize-space(.),'conversations')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//span[normalize-space(.)='Clear selection' or normalize-space(.)='Xóa lựa chọn' or normalize-space(.)='Bỏ chọn' or normalize-space(.)='Xoá lựa chọn'])[last()]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@gh='tm']//span[@role='checkbox'] | //div[@gh='mtb']//span[@role='checkbox'])[1]</td><td></td></tr>
+</tbody></table><br/>
+</body></html>
