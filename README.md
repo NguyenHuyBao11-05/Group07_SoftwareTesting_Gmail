@@ -1,53 +1,100 @@
-# 📧 BÀI TẬP LỚN: PHÂN TÍCH & THIẾT KẾ TEST CASE TỰ ĐỘNG GMAIL (GROUP 07)
+# 📧 AUTOMATION TESTING PROJECT — GOOGLE GMAIL (GROUP 07)
 
-## 📌 GIỚI THIỆU DỰ ÁN
-* **Môn học:** Kiểm thử Phần mềm (Software Testing)
-* **Đối tượng kiểm thử:** Hệ thống Google Gmail (`https://mail.google.com/`)
-* **Phạm vi:** Phân tích, thiết kế Test Case và Lập kế hoạch Automation Test cho 12 chức năng cơ bản của Gmail.
+Dự án tích hợp \& thực thi kịch bản kiểm thử tự động (Automation Test Suite) cho giao diện web **Google Gmail** (`https://mail.google.com/`), thuộc môn học **Kiểm thử Phần mềm (Software Testing)**.
 
----
+\---
 
 ## 👥 PHÂN CÔNG NHIỆM VỤ THÀNH VIÊN
 
-### 👤 Thành viên 1: Cá nhân hóa Giao diện & Cấu hình Hệ thống (Settings)
-*(Chuyên sâu vào phần Cài đặt của Gmail — hoàn toàn không đụng chạm tới đăng nhập/đăng xuất)*
-* **Chức năng 1:** Tùy chỉnh Bố cục Hộp thư & Khung đọc thư (Inbox Layout, Density & Reading Pane)
-* **Chức năng 2:** Quản lý Chữ ký email & Cài đặt chung (Signatures & General Settings)
-* **Chức năng 3:** Thiết lập Trả lời tự động & Mẫu thư có sẵn (Vacation Responder & Templates)
+|STT|Thành viên|MSSV|Vai trò \& Nhóm Chức năng Phụ trách|Công cụ \& Script|
+|:-:|-|:-:|-|:-:|
+|1|Nguyễn Huy Bảo|23130022|**Tổ chức Hộp thư \& Thùng rác:** Star/Snooze, Bộ lọc tự động, Spam \& Thùng rác (CN 10, 11, 12)|Katalon Recorder (`.html`)|
+|2|Nguyễn Khoa Đăng|23130041|**Soạn thảo \& Thư nháp:** Soạn/Gửi thư, Đính kèm \& Định dạng, Thư nháp (CN 4, 5, 6)|Katalon Recorder (`.side`)|
+|3|Trương Trọng Nhân|23130217|**Phản hồi \& Tìm kiếm:** Reply/Forward, Tìm kiếm nâng cao, Quản lý Nhãn (CN 7, 8, 9)|Selenium Java (`.java`) / Katalon|
+|4|Trương Phúc Nền|23130203|**Cấu hình \& Giao diện:** Tùy chỉnh Hộp thư, Chữ ký email, Trả lời tự động (CN 1, 2, 3)|Katalon Recorder (`.side`)|
 
----
+\---
 
-### 👤 Thành viên 2: Soạn thảo, Đính kèm cục bộ & Quản lý Thư nháp
-*(Kiểm soát toàn bộ vòng đời tạo mới một email)*
-* **Chức năng 4:** Soạn và Gửi thư đa luồng (Compose & Send Email)
-* **Chức năng 5:** Đính kèm tệp từ máy tính & Định dạng văn bản (Local Attachments & Formatting)
-* **Chức năng 6:** Quản lý Thư nháp tự động (Drafts Lifecycle)
+## 📁 CẤU TRÚC REPOSITORY TÍCH HỢP
 
----
+Repository được cấu trúc để chứa đồng thời các kịch bản kiểm thử dạng `.side` (Katalon Recorder / Selenium IDE) và các mã nguồn `.java` (Selenium WebDriver), bảo đảm các thành viên có thể phát triển độc lập và tích hợp vào một dự án chung.
 
-### 👤 Thành viên 3: Phản hồi thư, Tìm kiếm & Quản lý Nhãn (Labels)
-*(Tập trung vào luồng xử lý, truy xuất và phân loại thư)*
-* **Chức năng 7:** Trả lời, Trả lời tất cả & Chuyển tiếp (Reply, Reply All & Forward)
-* **Chức năng 8:** Tìm kiếm cơ bản & Bộ lọc Tìm kiếm nâng cao (Basic & Advanced Search)
-* **Chức năng 9:** Quản lý Nhãn cá nhân & Phân loại thư (Labels Management)
-
----
-
-### 👤 Thành viên 4: Tổ chức Hộp thư, Bộ lọc tự động & Thùng rác
-*(Tập trung vào các thao tác hàng loạt và tự động hóa quy tắc hộp thư)*
-* **Chức năng 10:** Đánh dấu ưu tiên, Tạm ẩn & Thao tác hàng loạt (Star, Snooze & Bulk Actions)
-* **Chức năng 11:** Quản lý Bộ lọc thư tự động (Filters & Rules)
-* **Chức năng 12:** Xử lý Thư rác, Thùng rác & Khôi phục dữ liệu (Spam, Trash & Recovery)
-
----
-
-## 📂 CẤU TRÚC REPOSITORY
 ```text
 Group07_SoftwareTesting_Gmail/
-├── README.md                          # Tài liệu giới thiệu & Phân công dự án
-├── Group07_GmailProject.xlsx          # Tài liệu Test Case tổng hợp của cả nhóm
-└── individual_docs/                   # Bài nộp cá nhân theo tuần
-    ├── Group07_MaSV1_HoTen1.xlsx
-    ├── Group07_MaSV2_HoTen2.xlsx      # (Chức năng 4, 5, 6)
-    ├── Group07_MaSV3_HoTen3.xlsx
-    └── Group07_MaSV4_HoTen4.xlsx
+├── README.md                           # Tài liệu hướng dẫn cài đặt & chạy project
+├── Group07_GmailProject.xlsx           # File Excel tổng hợp toàn bộ Test Case của nhóm
+├── pom.xml                             # Cấu hình Maven (dành cho Selenium Java)
+│
+├── Automation Testing Project - Group 07/                            # Thư mục chứa toàn bộ Automation Scripts
+│   ├── katalon_side/           # Chứa các file kịch bản .side / .json
+│   │   ├── MemberX_Feature.side	# Thành viên trong nhóm_Chức năng test
+│   │   ├── MemberX_Feature.side
+│   │   └── MemberX_Feature.side
+│   │
+│   └── java_selenium/          # Chứa mã nguồn Selenium Java (.java)
+│       └── MemberX_Feature.java   
+│
+├── Test Report - Group 07/                            # Thư mục lưu báo cáo kết quả kiểm thử
+│   ├── test-report.html     # Báo cáo kết quả tổng hợp Test Suite
+│   └── test-execution-log.txt          # File Log thực thi
+│
+└── Envidence - Group 07/                        # Ảnh chụp màn hình minh chứng thực thi
+    ├── execution_katalon.png
+    └── execution_java.png
+```
+
+\---
+
+## 🛠️ YÊU CẦU MÔI TRƯỜNG \& PHẦN MỀM
+
+1. **Trình duyệt Web:** Google Chrome (phiên bản mới nhất).
+2. **Katalon Recorder Extension:** Cài đặt trên Chrome Web Store (dùng cho các file `.side`).
+3. **Môi trường Java (cho Selenium Java):**
+
+   * JDK 17 trở lên.
+   * Apache Maven 3.x.
+   * IDE: VS Code / Eclipse / IntelliJ IDEA.
+
+\---
+
+## 🚀 HƯỚNG DẪN CHẠY TEST SUITE
+
+### Cách 1: Chạy kịch bản `.side` bằng Katalon Recorder (Khuyên dùng)
+
+1. Mở trình duyệt Google Chrome và khởi động tiện ích **Katalon Recorder**.
+2. Đăng nhập sẵn tài khoản Gmail kiểm thử trên trình duyệt.
+3. Trong giao diện Katalon Recorder, chọn **Open Test Suite / Open Project** $\\rightarrow$ Trỏ tới thư mục `Automation Testing Project - Group 07/katalon_side/` và chọn file `.side` hoặc test suite `.html` cần chạy.
+4. Chọn Test Suite tổng và nhấn **Play Test Suite**.
+
+### Cách 2: Chạy kịch bản Selenium Java (`.java`)
+
+1. Mở dự án trong IDE (VS Code / IntelliJ).
+2. Tải các thư viện phụ thuộc bằng Maven:
+
+```bash
+   mvn clean install
+   ```
+
+3. Mở file test (ví dụ: `MemberX_Feature.java`) trong thư mục `Automation Testing Project - Group 07/java_selenium/` và chọn **Run Test** (hoặc dùng JUnit / TestNG Runner).
+
+\---
+
+## 📊 BÁO CÁO KẾT QUẢ KIỂM THỬ (TEST REPORT)
+
+Sau khi hoàn tất thực thi toàn bộ Test Suite, báo cáo kết quả tổng hợp sẽ được xuất và lưu trữ tại thư mục `Test Report - Group 07/` theo quy chuẩn đặt tên:
+
+* **Tên file báo cáo chung:** `Test Report - Tên người làm - (ngày test).html`
+* **Cách xuất báo cáo từ Katalon Recorder:**
+
+  1. Sau khi chạy xong Test Suite, chuyển sang tab **Log / Test Execution Summary**.
+  2. Chọn **Export Logs** $\\rightarrow$ **Export HTML Report**.
+  3. Đổi tên file thành `Test Report - Tên người làm - (ngày test).html` và lưu vào thư mục `Test Report - Group 07/`.
+
+\---
+
+## 📝 QUY ĐỊNH COMMIT \& TÍCH HỢP CODE (GIT WORKFLOW)
+
+1. Mỗi thành viên làm việc trên branch cá nhân (`feature/member-name`).
+2. Đưa file script cá nhân vào đúng thư mục (`katalon_side/` hoặc `java_selenium/`).
+3. Tạo Pull Request (PR) về branch `dev` và thông báo cho trưởng nhóm review trước khi Merge.
+
