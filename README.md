@@ -8,10 +8,10 @@ Dự án tích hợp \& thực thi kịch bản kiểm thử tự động (Autom
 
 |STT|Thành viên|MSSV|Vai trò \& Nhóm Chức năng Phụ trách|Công cụ \& Script|
 |:-:|-|:-:|-|:-:|
-|1|Nguyễn Huy Bảo|23130022|**Cấu hình \& Giao diện:** Tùy chỉnh Hộp thư, Chữ ký email, Trả lời tự động (CN 1, 2, 3)|Katalon Recorder (`.side`)|
+|1|Nguyễn Huy Bảo|23130022|**Tổ chức Hộp thư \& Thùng rác:** Star/Snooze, Bộ lọc tự động, Spam \& Thùng rác (CN 10, 11, 12)|Katalon Recorder (`.html`)|
 |2|Nguyễn Khoa Đăng|23130041|**Soạn thảo \& Thư nháp:** Soạn/Gửi thư, Đính kèm \& Định dạng, Thư nháp (CN 4, 5, 6)|Katalon Recorder (`.side`)|
 |3|Trương Trọng Nhân|23130217|**Phản hồi \& Tìm kiếm:** Reply/Forward, Tìm kiếm nâng cao, Quản lý Nhãn (CN 7, 8, 9)|Selenium Java (`.java`) / Katalon|
-|4|Trương Phúc Nền|23130203|**Tổ chức Hộp thư \& Thùng rác:** Star/Snooze, Bộ lọc tự động, Spam \& Thùng rác (CN 10, 11, 12)|Katalon Recorder (`.side`)|
+|4|Trương Phúc Nền|23130203|**Cấu hình \& Giao diện:** Tùy chỉnh Hộp thư, Chữ ký email, Trả lời tự động (CN 1, 2, 3)|Katalon Recorder (`.side`)|
 
 \---
 
@@ -63,7 +63,7 @@ Group07_SoftwareTesting_Gmail/
 
 1. Mở trình duyệt Google Chrome và khởi động tiện ích **Katalon Recorder**.
 2. Đăng nhập sẵn tài khoản Gmail kiểm thử trên trình duyệt.
-3. Trong giao diện Katalon Recorder, chọn **Open Test Suite / Open Project** $\\rightarrow$ Trỏ tới thư mục `.Automation Testing Project - Group 07/katalon_side/` và chọn file `.side` cần chạy.
+3. Trong giao diện Katalon Recorder, chọn **Open Test Suite / Open Project** $\\rightarrow$ Trỏ tới thư mục `Automation Testing Project - Group 07/katalon_side/` và chọn file `.side` hoặc test suite `.html` cần chạy.
 4. Chọn Test Suite tổng và nhấn **Play Test Suite**.
 
 ### Cách 2: Chạy kịch bản Selenium Java (`.java`)
@@ -75,7 +75,7 @@ Group07_SoftwareTesting_Gmail/
    mvn clean install
    ```
 
-3. Mở file test (ví dụ: `MemberX_Feature.java`) trong thư mục `.Automation Testing Project - Group 07/java_selenium/` và chọn **Run Test** (hoặc dùng JUnit / TestNG Runner).
+3. Mở file test (ví dụ: `MemberX_Feature.java`) trong thư mục `Automation Testing Project - Group 07/java_selenium/` và chọn **Run Test** (hoặc dùng JUnit / TestNG Runner).
 
 \---
 
@@ -95,6 +95,6 @@ Sau khi hoàn tất thực thi toàn bộ Test Suite, báo cáo kết quả tổ
 ## 📝 QUY ĐỊNH COMMIT \& TÍCH HỢP CODE (GIT WORKFLOW)
 
 1. Mỗi thành viên làm việc trên branch cá nhân (`feature/member-name`).
-2. Đưa file script cá nhân vào đúng thư mục (`katalon_side_/` hoặc `java_selenium/`).
+2. Đưa file script cá nhân vào đúng thư mục (`katalon_side/` hoặc `java_selenium/`).
 3. Tạo Pull Request (PR) về branch `dev` và thông báo cho trưởng nhóm review trước khi Merge.
 

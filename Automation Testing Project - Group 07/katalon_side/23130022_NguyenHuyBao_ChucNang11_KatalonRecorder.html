@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="selenium.base" href="https://mail.google.com/" />
+<title>23130022_NguyenHuyBao_ChucNang11_FiltersRules</title></head><body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_VIS_01: Kiem tra giao dien tab Filters and Blocked Addresses</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='button' or self::a or self::button][contains(@aria-label,'Settings') or contains(@data-tooltip,'Settings') or contains(@aria-label,'Cài đặt') or contains(@data-tooltip,'Cài đặt') or contains(@aria-label,'cài đặt') or contains(@data-tooltip,'cài đặt')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>15000</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::a or self::button][contains(@aria-label,'Settings') or contains(@data-tooltip,'Settings') or contains(@aria-label,'Cài đặt') or contains(@data-tooltip,'Cài đặt') or contains(@aria-label,'cài đặt') or contains(@data-tooltip,'cài đặt')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//button[contains(.,'See all settings') or (contains(.,'tất cả') and contains(.,'cài đặt'))])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//a[contains(@href,'#settings/filters')])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>10000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//*[contains(text(),'filters are applied to all incoming mail') or contains(text(),'bộ lọc sau') or contains(text(),'bộ lọc dư')])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'email addresses are blocked') or contains(text(),'bị chặn')]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//*[normalize-space(text())='Import filters' or normalize-space(text())='Nhập bộ lọc'])[1]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_VIS_02: Kiem tra giao dien form dieu kien loc</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=1#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//label[normalize-space(.)='From' or normalize-space(.)='Từ']/following::input[1])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//label[normalize-space(.)='To' or normalize-space(.)='Tới' or normalize-space(.)='Đến']/following::input[1])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//label[normalize-space(.)='Has the words' or normalize-space(.)='Có các từ']/following::input[1])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Doesn') or starts-with(normalize-space(.),'Không có')][not(ancestor::*[contains(@style,'display: none')])]/following::input[1])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//label[normalize-space(.)='Size' or starts-with(normalize-space(.),'Kích th')]/following::input[1])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//label[contains(.,'attachment') or contains(.,'đính kèm')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_VIS_03: Kiem tra giao dien buoc chon hanh dong</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=2#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>[Urgent]</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td>5000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Skip the Inbox') or starts-with(normalize-space(.),'Bỏ qua Hộp')])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Apply the label') or starts-with(normalize-space(.),'Áp dụng nh')])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Always mark it as important') or starts-with(normalize-space(.),'Luôn đánh dấu')])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Also apply filter') or starts-with(normalize-space(.),'Đô')])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc' or normalize-space(.)='Update filter' or starts-with(normalize-space(.),'Cập nhật bộ lọc')][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_VIS_04: Kiem tra Toast va dong hien thi bo loc sau khi tao</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=3#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>[Urgent]</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc' or normalize-space(.)='Update filter' or starts-with(normalize-space(.),'Cập nhật bộ lọc')][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[contains(@class,'bAq')][contains(.,'filter') or contains(.,'Đã tạo b') or contains(.,'Đã c')])[last()]</td><td>8000</td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa']])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//tr[contains(.,'[Urgent]') and (contains(.,'Star it') or contains(.,'Gắn dấu sao'))]</td><td></td></tr>
+<tr><td>echo</td><td>Don du lieu: xoa bo loc '[Urgent]'</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=4#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]][not(.//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]])]//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_VAL_01: Kiem tra khong cho tao bo loc khi bo trong dieu kien</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=5#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>echo</td><td>Xoa trang moi o dieu kien bang phim (type rong + go/xoa 1 ky tu de Gmail cap nhat trang thai nut Tao bo loc)</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='From' or normalize-space(.)='Từ']/following::input[1])[1]</td><td></td></tr>
+<tr><td>sendKeys</td><td>xpath=(//label[normalize-space(.)='From' or normalize-space(.)='Từ']/following::input[1])[1]</td><td>a${KEY_BACKSPACE}</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='To' or normalize-space(.)='Tới' or normalize-space(.)='Đến']/following::input[1])[1]</td><td></td></tr>
+<tr><td>sendKeys</td><td>xpath=(//label[normalize-space(.)='To' or normalize-space(.)='Tới' or normalize-space(.)='Đến']/following::input[1])[1]</td><td>a${KEY_BACKSPACE}</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td></td></tr>
+<tr><td>sendKeys</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>a${KEY_BACKSPACE}</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Has the words' or normalize-space(.)='Có các từ']/following::input[1])[1]</td><td></td></tr>
+<tr><td>sendKeys</td><td>xpath=(//label[normalize-space(.)='Has the words' or normalize-space(.)='Có các từ']/following::input[1])[1]</td><td>a${KEY_BACKSPACE}</td></tr>
+<tr><td>type</td><td>xpath=(//label[starts-with(normalize-space(.),'Doesn') or starts-with(normalize-space(.),'Không có')][not(ancestor::*[contains(@style,'display: none')])]/following::input[1])[1]</td><td></td></tr>
+<tr><td>sendKeys</td><td>xpath=(//label[starts-with(normalize-space(.),'Doesn') or starts-with(normalize-space(.),'Không có')][not(ancestor::*[contains(@style,'display: none')])]/following::input[1])[1]</td><td>a${KEY_BACKSPACE}</td></tr>
+<tr><td>pause</td><td>500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_VAL_02: Kiem tra bat buoc chon it nhat 1 hanh dong</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=6#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>[Urgent] VAL02</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc' or normalize-space(.)='Update filter' or starts-with(normalize-space(.),'Cập nhật bộ lọc')][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=(//*[contains(@class,'bAq')][contains(.,'filter') or contains(.,'Đã tạo b') or contains(.,'Đã c')])[last()]</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=7#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=(//tr[contains(.,'[Urgent] VAL02')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa']])[1]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_VAL_03: Kiem tra nhap Size la ky tu chu</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=8#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Size' or starts-with(normalize-space(.),'Kích th')]/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Size' or starts-with(normalize-space(.),'Kích th')]/following::input[1])[1]</td><td>abc</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_VAL_04: Kiem tra gia tri bien Size 0 va so am</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=9#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Size' or starts-with(normalize-space(.),'Kích th')]/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Size' or starts-with(normalize-space(.),'Kích th')]/following::input[1])[1]</td><td>-1</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td></td></tr>
+<tr><td>echo</td><td>Bien duoi: Size = 0</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=10#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Size' or starts-with(normalize-space(.),'Kích th')]/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Size' or starts-with(normalize-space(.),'Kích th')]/following::input[1])[1]</td><td>0</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_VAL_05: Kiem tra tich Apply the label nhung khong chon nhan</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=11#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>[Urgent] VAL05</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//label[starts-with(normalize-space(.),'Apply the label') or starts-with(normalize-space(.),'Áp dụng nh')])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc' or normalize-space(.)='Update filter' or starts-with(normalize-space(.),'Cập nhật bộ lọc')][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=(//*[contains(@class,'bAq')][contains(.,'filter') or contains(.,'Đã tạo b') or contains(.,'Đã c')])[last()]</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=12#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=(//tr[contains(.,'[Urgent] VAL05')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa']])[1]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_FUN_01: Tao bo loc tu dong Danh dau sao (Star it)</td></tr></thead><tbody>
+<tr><td>store</td><td>23130022@st.hcmuaf.edu.vn</td><td>MY_EMAIL</td></tr>
+<tr><td>store</td><td>G:\VSC projects\testing\23130022_NguyenHuyBao_ASM7.txt</td><td>ATTACH_FILE</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=13#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>[Urgent]</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc' or normalize-space(.)='Update filter' or starts-with(normalize-space(.),'Cập nhật bộ lọc')][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[contains(@class,'bAq')][contains(.,'filter') or contains(.,'Đã tạo b') or contains(.,'Đã c')])[last()]</td><td>8000</td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=14&amp;view=cm&amp;fs=1&amp;to=${MY_EMAIL}</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>25000</td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>[Urgent] KR FUN01</td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='textbox'][@g_editable='true' or @contenteditable='true'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='button'][starts-with(@data-tooltip,'Send') or starts-with(@data-tooltip,'Gửi') or starts-with(@aria-label,'Send') or starts-with(@aria-label,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>5000</td><td></td></tr>
+<tr><td>pause</td><td>8000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=15#starred</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//tr[contains(@class,'zA')][.//span[@class='bog' and contains(normalize-space(.),'[Urgent] KR FUN01')]]</td><td>30000</td></tr>
+<tr><td>echo</td><td>Don du lieu: xoa bo loc '[Urgent]'</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=16#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]][not(.//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]])]//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_FUN_02: Tao bo loc Luon danh dau Quan trong</td></tr></thead><tbody>
+<tr><td>store</td><td>23130022@st.hcmuaf.edu.vn</td><td>MY_EMAIL</td></tr>
+<tr><td>store</td><td>G:\VSC projects\testing\23130022_NguyenHuyBao_ASM7.txt</td><td>ATTACH_FILE</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=17#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>[Urgent]</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//label[starts-with(normalize-space(.),'Always mark it as important') or starts-with(normalize-space(.),'Luôn đánh dấu')])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc' or normalize-space(.)='Update filter' or starts-with(normalize-space(.),'Cập nhật bộ lọc')][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[contains(@class,'bAq')][contains(.,'filter') or contains(.,'Đã tạo b') or contains(.,'Đã c')])[last()]</td><td>8000</td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=18&amp;view=cm&amp;fs=1&amp;to=${MY_EMAIL}</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>25000</td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>[Urgent] KR FUN02</td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='textbox'][@g_editable='true' or @contenteditable='true'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='button'][starts-with(@data-tooltip,'Send') or starts-with(@data-tooltip,'Gửi') or starts-with(@aria-label,'Send') or starts-with(@aria-label,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>5000</td><td></td></tr>
+<tr><td>pause</td><td>8000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=19#imp</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//tr[contains(@class,'zA')][.//span[@class='bog' and contains(normalize-space(.),'[Urgent] KR FUN02')]]</td><td>30000</td></tr>
+<tr><td>echo</td><td>Don du lieu: xoa bo loc '[Urgent]'</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=20#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]][not(.//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]])]//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_FUN_03: Tao bo loc Gan nhan Uu tien</td></tr></thead><tbody>
+<tr><td>store</td><td>23130022@st.hcmuaf.edu.vn</td><td>MY_EMAIL</td></tr>
+<tr><td>store</td><td>G:\VSC projects\testing\23130022_NguyenHuyBao_ASM7.txt</td><td>ATTACH_FILE</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=21#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>[Urgent]</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//label[starts-with(normalize-space(.),'Apply the label') or starts-with(normalize-space(.),'Áp dụng nh')])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='option'][starts-with(normalize-space(.),'Choose label') or starts-with(normalize-space(.),'Ch')][not(contains(.,'danh'))][not(contains(.,'ategor'))])[1]</td><td></td></tr>
+<tr><td>pause</td><td>800</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//div[contains(@class,'J-N-Jz')][normalize-space(.)='Ưu tiên'])[last()]</td><td>5000</td></tr>
+<tr><td>sendKeys</td><td>xpath=(//div[@role='option'][starts-with(normalize-space(.),'Choose label') or starts-with(normalize-space(.),'Ch')][not(contains(.,'danh'))][not(contains(.,'ategor'))])[1]</td><td>${KEY_DOWN}</td></tr>
+<tr><td>pause</td><td>300</td><td></td></tr>
+<tr><td>sendKeys</td><td>xpath=(//div[@role='option'][starts-with(normalize-space(.),'Choose label') or starts-with(normalize-space(.),'Ch')][not(contains(.,'danh'))][not(contains(.,'ategor'))])[1]</td><td>${KEY_DOWN}</td></tr>
+<tr><td>pause</td><td>300</td><td></td></tr>
+<tr><td>sendKeys</td><td>xpath=(//div[@role='option'][starts-with(normalize-space(.),'Choose label') or starts-with(normalize-space(.),'Ch')][not(contains(.,'danh'))][not(contains(.,'ategor'))])[1]</td><td>${KEY_DOWN}</td></tr>
+<tr><td>pause</td><td>300</td><td></td></tr>
+<tr><td>sendKeys</td><td>xpath=(//div[@role='option'][starts-with(normalize-space(.),'Choose label') or starts-with(normalize-space(.),'Ch')][not(contains(.,'danh'))][not(contains(.,'ategor'))])[1]</td><td>${KEY_ENTER}</td></tr>
+<tr><td>pause</td><td>800</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//div[@role='option'][normalize-space(.)='Ưu tiên']</td><td></td></tr>
+<tr><td>pause</td><td>500</td><td></td></tr>
+<tr><td>pause</td><td>500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc' or normalize-space(.)='Update filter' or starts-with(normalize-space(.),'Cập nhật bộ lọc')][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[contains(@class,'bAq')][contains(.,'filter') or contains(.,'Đã tạo b') or contains(.,'Đã c')])[last()]</td><td>8000</td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=22&amp;view=cm&amp;fs=1&amp;to=${MY_EMAIL}</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>25000</td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>[Urgent] KR FUN03</td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='textbox'][@g_editable='true' or @contenteditable='true'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='button'][starts-with(@data-tooltip,'Send') or starts-with(@data-tooltip,'Gửi') or starts-with(@aria-label,'Send') or starts-with(@aria-label,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>5000</td><td></td></tr>
+<tr><td>pause</td><td>8000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=23#label/%C6%AFu+ti%C3%AAn</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//tr[contains(@class,'zA')][.//span[@class='bog' and contains(normalize-space(.),'[Urgent] KR FUN03')]]</td><td>30000</td></tr>
+<tr><td>echo</td><td>Don du lieu: xoa bo loc '[Urgent]'</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=24#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]][not(.//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]])]//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_FUN_04: Tao bo loc ket hop Sao + Quan trong + Nhan Uu tien</td></tr></thead><tbody>
+<tr><td>store</td><td>23130022@st.hcmuaf.edu.vn</td><td>MY_EMAIL</td></tr>
+<tr><td>store</td><td>G:\VSC projects\testing\23130022_NguyenHuyBao_ASM7.txt</td><td>ATTACH_FILE</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=25#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>[Urgent]</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//label[starts-with(normalize-space(.),'Always mark it as important') or starts-with(normalize-space(.),'Luôn đánh dấu')])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//label[starts-with(normalize-space(.),'Apply the label') or starts-with(normalize-space(.),'Áp dụng nh')])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='option'][starts-with(normalize-space(.),'Choose label') or starts-with(normalize-space(.),'Ch')][not(contains(.,'danh'))][not(contains(.,'ategor'))])[1]</td><td></td></tr>
+<tr><td>pause</td><td>800</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//div[contains(@class,'J-N-Jz')][normalize-space(.)='Ưu tiên'])[last()]</td><td>5000</td></tr>
+<tr><td>sendKeys</td><td>xpath=(//div[@role='option'][starts-with(normalize-space(.),'Choose label') or starts-with(normalize-space(.),'Ch')][not(contains(.,'danh'))][not(contains(.,'ategor'))])[1]</td><td>${KEY_DOWN}</td></tr>
+<tr><td>pause</td><td>300</td><td></td></tr>
+<tr><td>sendKeys</td><td>xpath=(//div[@role='option'][starts-with(normalize-space(.),'Choose label') or starts-with(normalize-space(.),'Ch')][not(contains(.,'danh'))][not(contains(.,'ategor'))])[1]</td><td>${KEY_DOWN}</td></tr>
+<tr><td>pause</td><td>300</td><td></td></tr>
+<tr><td>sendKeys</td><td>xpath=(//div[@role='option'][starts-with(normalize-space(.),'Choose label') or starts-with(normalize-space(.),'Ch')][not(contains(.,'danh'))][not(contains(.,'ategor'))])[1]</td><td>${KEY_DOWN}</td></tr>
+<tr><td>pause</td><td>300</td><td></td></tr>
+<tr><td>sendKeys</td><td>xpath=(//div[@role='option'][starts-with(normalize-space(.),'Choose label') or starts-with(normalize-space(.),'Ch')][not(contains(.,'danh'))][not(contains(.,'ategor'))])[1]</td><td>${KEY_ENTER}</td></tr>
+<tr><td>pause</td><td>800</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//div[@role='option'][normalize-space(.)='Ưu tiên']</td><td></td></tr>
+<tr><td>pause</td><td>500</td><td></td></tr>
+<tr><td>pause</td><td>500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc' or normalize-space(.)='Update filter' or starts-with(normalize-space(.),'Cập nhật bộ lọc')][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[contains(@class,'bAq')][contains(.,'filter') or contains(.,'Đã tạo b') or contains(.,'Đã c')])[last()]</td><td>8000</td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=26&amp;view=cm&amp;fs=1&amp;to=${MY_EMAIL}</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>25000</td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>[Urgent] KR FUN04</td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='textbox'][@g_editable='true' or @contenteditable='true'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='button'][starts-with(@data-tooltip,'Send') or starts-with(@data-tooltip,'Gửi') or starts-with(@aria-label,'Send') or starts-with(@aria-label,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>5000</td><td></td></tr>
+<tr><td>pause</td><td>8000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=27#starred</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//tr[contains(@class,'zA')][.//span[@class='bog' and contains(normalize-space(.),'[Urgent] KR FUN04')]]</td><td>30000</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=28#imp</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//tr[contains(@class,'zA')][.//span[@class='bog' and contains(normalize-space(.),'[Urgent] KR FUN04')]]</td><td>30000</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=29#label/%C6%AFu+ti%C3%AAn</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//tr[contains(@class,'zA')][.//span[@class='bog' and contains(normalize-space(.),'[Urgent] KR FUN04')]]</td><td>30000</td></tr>
+<tr><td>echo</td><td>Don du lieu: xoa bo loc '[Urgent]'</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=30#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]][not(.//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]])]//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_FUN_05: Also apply filter to matching conversations ap dung cho thu cu</td></tr></thead><tbody>
+<tr><td>store</td><td>23130022@st.hcmuaf.edu.vn</td><td>MY_EMAIL</td></tr>
+<tr><td>store</td><td>G:\VSC projects\testing\23130022_NguyenHuyBao_ASM7.txt</td><td>ATTACH_FILE</td></tr>
+<tr><td>echo</td><td>Chuan bi: gui thu cu truoc khi tao bo loc</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=31&amp;view=cm&amp;fs=1&amp;to=${MY_EMAIL}</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>25000</td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>[Urgent] KR OLD</td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='textbox'][@g_editable='true' or @contenteditable='true'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='button'][starts-with(@data-tooltip,'Send') or starts-with(@data-tooltip,'Gửi') or starts-with(@aria-label,'Send') or starts-with(@aria-label,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>5000</td><td></td></tr>
+<tr><td>pause</td><td>8000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=32#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>[Urgent]</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//label[starts-with(normalize-space(.),'Also apply filter') or starts-with(normalize-space(.),'Đô')])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc' or normalize-space(.)='Update filter' or starts-with(normalize-space(.),'Cập nhật bộ lọc')][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[contains(@class,'bAq')][contains(.,'filter') or contains(.,'Đã tạo b') or contains(.,'Đã c')])[last()]</td><td>8000</td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=33#inbox</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//input[@name='q']</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>type</td><td>xpath=//input[@name='q']</td><td>subject:"[Urgent] KR OLD"</td></tr>
+<tr><td>sendKeys</td><td>xpath=//input[@name='q']</td><td>${KEY_ENTER}</td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//tr[contains(@class,'zA')][.//span[@class='bog' and contains(normalize-space(.),'[Urgent] KR OLD')]]//*[contains(@class,'T-KT-Jp') or contains(@aria-label,'Starred') or (contains(@aria-label,'sao') and starts-with(@aria-label,'C') and not(starts-with(@aria-label,'Ch')))]</td><td></td></tr>
+<tr><td>echo</td><td>Don du lieu: xoa bo loc '[Urgent]'</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=34#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]][not(.//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]])]//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_FUN_06: Khong tich Also apply thi thu cu khong bi anh huong</td></tr></thead><tbody>
+<tr><td>store</td><td>23130022@st.hcmuaf.edu.vn</td><td>MY_EMAIL</td></tr>
+<tr><td>store</td><td>G:\VSC projects\testing\23130022_NguyenHuyBao_ASM7.txt</td><td>ATTACH_FILE</td></tr>
+<tr><td>echo</td><td>Chuan bi: gui thu cu truoc khi tao bo loc</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=35&amp;view=cm&amp;fs=1&amp;to=${MY_EMAIL}</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>25000</td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>[Gap] KR OLD</td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='textbox'][@g_editable='true' or @contenteditable='true'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='button'][starts-with(@data-tooltip,'Send') or starts-with(@data-tooltip,'Gửi') or starts-with(@aria-label,'Send') or starts-with(@aria-label,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>5000</td><td></td></tr>
+<tr><td>pause</td><td>8000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=36#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>[Gap]</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc' or normalize-space(.)='Update filter' or starts-with(normalize-space(.),'Cập nhật bộ lọc')][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[contains(@class,'bAq')][contains(.,'filter') or contains(.,'Đã tạo b') or contains(.,'Đã c')])[last()]</td><td>8000</td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=37#inbox</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//input[@name='q']</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>type</td><td>xpath=//input[@name='q']</td><td>subject:"[Gap] KR OLD"</td></tr>
+<tr><td>sendKeys</td><td>xpath=//input[@name='q']</td><td>${KEY_ENTER}</td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=//tr[contains(@class,'zA')][.//span[@class='bog' and contains(normalize-space(.),'[Gap] KR OLD')]]//*[contains(@class,'T-KT-Jp') or contains(@aria-label,'Starred') or (contains(@aria-label,'sao') and starts-with(@aria-label,'C') and not(starts-with(@aria-label,'Ch')))]</td><td></td></tr>
+<tr><td>echo</td><td>Don du lieu: xoa bo loc '[Gap]'</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=38#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(.,'[Gap]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]][not(.//tr[contains(.,'[Gap]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]])]//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_FUN_07: Bo loc theo From &gt; Skip the Inbox (Archive)</td></tr></thead><tbody>
+<tr><td>store</td><td>23130022@st.hcmuaf.edu.vn</td><td>MY_EMAIL</td></tr>
+<tr><td>store</td><td>G:\VSC projects\testing\23130022_NguyenHuyBao_ASM7.txt</td><td>ATTACH_FILE</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=39#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='From' or normalize-space(.)='Từ']/following::input[1])[1]</td><td>${MY_EMAIL}</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Has the words' or normalize-space(.)='Có các từ']/following::input[1])[1]</td><td>KRSKIP</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//label[starts-with(normalize-space(.),'Skip the Inbox') or starts-with(normalize-space(.),'Bỏ qua Hộp')])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc' or normalize-space(.)='Update filter' or starts-with(normalize-space(.),'Cập nhật bộ lọc')][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[contains(@class,'bAq')][contains(.,'filter') or contains(.,'Đã tạo b') or contains(.,'Đã c')])[last()]</td><td>8000</td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=40&amp;view=cm&amp;fs=1&amp;to=${MY_EMAIL}</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>25000</td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>KRSKIP FUN07</td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='textbox'][@g_editable='true' or @contenteditable='true'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='button'][starts-with(@data-tooltip,'Send') or starts-with(@data-tooltip,'Gửi') or starts-with(@aria-label,'Send') or starts-with(@aria-label,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>5000</td><td></td></tr>
+<tr><td>pause</td><td>8000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=41#inbox</td><td></td></tr>
+<tr><td>pause</td><td>5000</td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=//tr[contains(@class,'zA')][.//span[@class='bog' and contains(normalize-space(.),'KRSKIP FUN07')]]</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=42#all</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//tr[contains(@class,'zA')][.//span[@class='bog' and contains(normalize-space(.),'KRSKIP FUN07')]]</td><td>30000</td></tr>
+<tr><td>echo</td><td>Don du lieu: xoa bo loc 'KRSKIP'</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=43#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(.,'KRSKIP')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]][not(.//tr[contains(.,'KRSKIP')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]])]//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_FUN_08: Bo loc Has attachment &gt; Gan nhan Uu tien</td></tr></thead><tbody>
+<tr><td>store</td><td>23130022@st.hcmuaf.edu.vn</td><td>MY_EMAIL</td></tr>
+<tr><td>store</td><td>G:\VSC projects\testing\23130022_NguyenHuyBao_ASM7.txt</td><td>ATTACH_FILE</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=44#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>KRATT</td></tr>
+<tr><td>click</td><td>xpath=(//label[contains(.,'attachment') or contains(.,'đính kèm')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//label[starts-with(normalize-space(.),'Apply the label') or starts-with(normalize-space(.),'Áp dụng nh')])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='option'][starts-with(normalize-space(.),'Choose label') or starts-with(normalize-space(.),'Ch')][not(contains(.,'danh'))][not(contains(.,'ategor'))])[1]</td><td></td></tr>
+<tr><td>pause</td><td>800</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//div[contains(@class,'J-N-Jz')][normalize-space(.)='Ưu tiên'])[last()]</td><td>5000</td></tr>
+<tr><td>sendKeys</td><td>xpath=(//div[@role='option'][starts-with(normalize-space(.),'Choose label') or starts-with(normalize-space(.),'Ch')][not(contains(.,'danh'))][not(contains(.,'ategor'))])[1]</td><td>${KEY_DOWN}</td></tr>
+<tr><td>pause</td><td>300</td><td></td></tr>
+<tr><td>sendKeys</td><td>xpath=(//div[@role='option'][starts-with(normalize-space(.),'Choose label') or starts-with(normalize-space(.),'Ch')][not(contains(.,'danh'))][not(contains(.,'ategor'))])[1]</td><td>${KEY_DOWN}</td></tr>
+<tr><td>pause</td><td>300</td><td></td></tr>
+<tr><td>sendKeys</td><td>xpath=(//div[@role='option'][starts-with(normalize-space(.),'Choose label') or starts-with(normalize-space(.),'Ch')][not(contains(.,'danh'))][not(contains(.,'ategor'))])[1]</td><td>${KEY_DOWN}</td></tr>
+<tr><td>pause</td><td>300</td><td></td></tr>
+<tr><td>sendKeys</td><td>xpath=(//div[@role='option'][starts-with(normalize-space(.),'Choose label') or starts-with(normalize-space(.),'Ch')][not(contains(.,'danh'))][not(contains(.,'ategor'))])[1]</td><td>${KEY_ENTER}</td></tr>
+<tr><td>pause</td><td>800</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//div[@role='option'][normalize-space(.)='Ưu tiên']</td><td></td></tr>
+<tr><td>pause</td><td>500</td><td></td></tr>
+<tr><td>pause</td><td>500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc' or normalize-space(.)='Update filter' or starts-with(normalize-space(.),'Cập nhật bộ lọc')][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[contains(@class,'bAq')][contains(.,'filter') or contains(.,'Đã tạo b') or contains(.,'Đã c')])[last()]</td><td>8000</td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=45&amp;view=cm&amp;fs=1&amp;to=${MY_EMAIL}</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>25000</td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>KRATT co tep</td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='textbox'][@g_editable='true' or @contenteditable='true'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>echo</td><td>&gt;&gt;&gt; BAM KEP GIAY (DINH KEM) VA CHON FILE ${ATTACH_FILE} NGAY BAY GIO (co 25 giay) &lt;&lt;&lt;</td><td></td></tr>
+<tr><td>pause</td><td>25000</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='button'][starts-with(@data-tooltip,'Send') or starts-with(@data-tooltip,'Gửi') or starts-with(@aria-label,'Send') or starts-with(@aria-label,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>5000</td><td></td></tr>
+<tr><td>pause</td><td>8000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=46&amp;view=cm&amp;fs=1&amp;to=${MY_EMAIL}</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>25000</td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>KRATT khong tep</td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='textbox'][@g_editable='true' or @contenteditable='true'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='button'][starts-with(@data-tooltip,'Send') or starts-with(@data-tooltip,'Gửi') or starts-with(@aria-label,'Send') or starts-with(@aria-label,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>5000</td><td></td></tr>
+<tr><td>pause</td><td>8000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=47#label/%C6%AFu+ti%C3%AAn</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//tr[contains(@class,'zA')][.//span[@class='bog' and contains(normalize-space(.),'KRATT co tep')]]</td><td>30000</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=48#label/%C6%AFu+ti%C3%AAn</td><td></td></tr>
+<tr><td>pause</td><td>5000</td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=//tr[contains(@class,'zA')][.//span[@class='bog' and contains(normalize-space(.),'KRATT khong tep')]]</td><td></td></tr>
+<tr><td>echo</td><td>Don du lieu: xoa bo loc 'KRATT'</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=49#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(.,'KRATT')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]][not(.//tr[contains(.,'KRATT')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]])]//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_FUN_09: Bo loc ket hop Has the words + Doesn't have</td></tr></thead><tbody>
+<tr><td>store</td><td>23130022@st.hcmuaf.edu.vn</td><td>MY_EMAIL</td></tr>
+<tr><td>store</td><td>G:\VSC projects\testing\23130022_NguyenHuyBao_ASM7.txt</td><td>ATTACH_FILE</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=50#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Has the words' or normalize-space(.)='Có các từ']/following::input[1])[1]</td><td>baocao</td></tr>
+<tr><td>type</td><td>xpath=(//label[starts-with(normalize-space(.),'Doesn') or starts-with(normalize-space(.),'Không có')][not(ancestor::*[contains(@style,'display: none')])]/following::input[1])[1]</td><td>nhap</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc' or normalize-space(.)='Update filter' or starts-with(normalize-space(.),'Cập nhật bộ lọc')][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[contains(@class,'bAq')][contains(.,'filter') or contains(.,'Đã tạo b') or contains(.,'Đã c')])[last()]</td><td>8000</td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=51&amp;view=cm&amp;fs=1&amp;to=${MY_EMAIL}</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>25000</td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>baocao tuan</td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='textbox'][@g_editable='true' or @contenteditable='true'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='button'][starts-with(@data-tooltip,'Send') or starts-with(@data-tooltip,'Gửi') or starts-with(@aria-label,'Send') or starts-with(@aria-label,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>5000</td><td></td></tr>
+<tr><td>pause</td><td>8000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=52&amp;view=cm&amp;fs=1&amp;to=${MY_EMAIL}</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>25000</td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//input[@name='subjectbox'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>baocao nhap</td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='textbox'][@g_editable='true' or @contenteditable='true'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='button'][starts-with(@data-tooltip,'Send') or starts-with(@data-tooltip,'Gửi') or starts-with(@aria-label,'Send') or starts-with(@aria-label,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>5000</td><td></td></tr>
+<tr><td>pause</td><td>8000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=53#starred</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//tr[contains(@class,'zA')][.//span[@class='bog' and contains(normalize-space(.),'baocao tuan')]]</td><td>30000</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=54#starred</td><td></td></tr>
+<tr><td>pause</td><td>5000</td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=//tr[contains(@class,'zA')][.//span[@class='bog' and contains(normalize-space(.),'baocao nhap')]]</td><td></td></tr>
+<tr><td>echo</td><td>Don du lieu: xoa bo loc 'baocao'</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=55#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(.,'baocao')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]][not(.//tr[contains(.,'baocao')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]])]//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_FUN_10: Chinh sua (Edit) dieu kien bo loc</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=56#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>[Urgent]</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc' or normalize-space(.)='Update filter' or starts-with(normalize-space(.),'Cập nhật bộ lọc')][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[contains(@class,'bAq')][contains(.,'filter') or contains(.,'Đã tạo b') or contains(.,'Đã c')])[last()]</td><td>8000</td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=57#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(.,'[Urgent]')]//*[normalize-space(text())='edit' or normalize-space(text())='chỉnh sửa' or normalize-space(text())='Chỉnh sửa'])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>[Gap]</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Continue' or (starts-with(normalize-space(.),'Ti') and contains(normalize-space(.),'p t') and string-length(normalize-space(.))&lt;12)][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc' or normalize-space(.)='Update filter' or starts-with(normalize-space(.),'Cập nhật bộ lọc')][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[contains(@class,'bAq')][contains(.,'filter') or contains(.,'Đã tạo b') or contains(.,'Đã c')])[last()]</td><td>8000</td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=58#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//tr[contains(.,'[Gap]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa']])[1]</td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=(//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa']])[1]</td><td></td></tr>
+<tr><td>echo</td><td>Don du lieu: xoa bo loc '[Gap]'</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=59#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(.,'[Gap]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]][not(.//tr[contains(.,'[Gap]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]])]//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_FUN_11: Xoa (Delete) bo loc</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=60#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>[Urgent]</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc' or normalize-space(.)='Update filter' or starts-with(normalize-space(.),'Cập nhật bộ lọc')][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[contains(@class,'bAq')][contains(.,'filter') or contains(.,'Đã tạo b') or contains(.,'Đã c')])[last()]</td><td>8000</td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=61#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]][not(.//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]])]//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>800</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'delete this filter') or contains(text(),'xóa bộ lọc này')]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=(//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa']])[1]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_FUN_12: Tao nhan moi ngay trong buoc chon hanh dong</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=62#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>[Urgent]</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//label[starts-with(normalize-space(.),'Apply the label') or starts-with(normalize-space(.),'Áp dụng nh')])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='option'][starts-with(normalize-space(.),'Choose label') or starts-with(normalize-space(.),'Ch')][not(contains(.,'danh'))][not(contains(.,'ategor'))])[1]</td><td></td></tr>
+<tr><td>pause</td><td>800</td><td></td></tr>
+<tr><td>pause</td><td>800</td><td></td></tr>
+<tr><td>sendKeys</td><td>xpath=(//div[@role='option'][starts-with(normalize-space(.),'Choose label') or starts-with(normalize-space(.),'Ch')][not(contains(.,'danh'))][not(contains(.,'ategor'))])[1]</td><td>${KEY_DOWN}</td></tr>
+<tr><td>pause</td><td>300</td><td></td></tr>
+<tr><td>sendKeys</td><td>xpath=(//div[@role='option'][starts-with(normalize-space(.),'Choose label') or starts-with(normalize-space(.),'Ch')][not(contains(.,'danh'))][not(contains(.,'ategor'))])[1]</td><td>${KEY_ENTER}</td></tr>
+<tr><td>pause</td><td>800</td><td></td></tr>
+<tr><td>pause</td><td>500</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//div[@role='dialog' or @role='alertdialog']//input[@type='text'])[last()]</td><td>Ưu tiên 2</td></tr>
+<tr><td>click</td><td>xpath=(//button[normalize-space(.)='Create' or normalize-space(.)='Tạo'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc' or normalize-space(.)='Update filter' or starts-with(normalize-space(.),'Cập nhật bộ lọc')][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[contains(@class,'bAq')][contains(.,'filter') or contains(.,'Đã tạo b') or contains(.,'Đã c')])[last()]</td><td>8000</td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//tr[contains(.,'[Urgent]') and contains(.,'Ưu tiên 2')]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//a[contains(@href,'#label/') and (@title='Ưu tiên 2' or normalize-space(.)='Ưu tiên 2')]</td><td></td></tr>
+<tr><td>echo</td><td>Don du lieu: xoa bo loc '[Urgent]'</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=63#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]][not(.//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]])]//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_NAV_01: Truy cap trang Filters qua Settings va URL truc tiep</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='button' or self::a or self::button][contains(@aria-label,'Settings') or contains(@data-tooltip,'Settings') or contains(@aria-label,'Cài đặt') or contains(@data-tooltip,'Cài đặt') or contains(@aria-label,'cài đặt') or contains(@data-tooltip,'cài đặt')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>15000</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::a or self::button][contains(@aria-label,'Settings') or contains(@data-tooltip,'Settings') or contains(@aria-label,'Cài đặt') or contains(@data-tooltip,'Cài đặt') or contains(@aria-label,'cài đặt') or contains(@data-tooltip,'cài đặt')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//button[contains(.,'See all settings') or (contains(.,'tất cả') and contains(.,'cài đặt'))])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//a[contains(@href,'#settings/filters')])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>10000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=64#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_NAV_02: Tao bo loc tu thanh tim kiem (Show search options)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//input[@name='q']</td><td>15000</td></tr>
+<tr><td>click</td><td>xpath=(//form[@role='search']//*[self::button or @role='button'][contains(@aria-label,'options') or contains(@aria-label,' ch') or contains(@data-tooltip,' ch')])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>[Urgent]</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_NAV_03: Tao bo loc tu email dang mo (Filter messages like these)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=103#inbox</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//div[@role='main']//tr[contains(@class,'zA')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='main']//tr[contains(@class,'zA')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//button[@aria-label='More message options' or (starts-with(@aria-label,'C') and contains(@aria-label,' ch') and contains(@aria-label,'th'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//button[@aria-label='More message options' or (starts-with(@aria-label,'C') and contains(@aria-label,' ch') and contains(@aria-label,'th'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[contains(.,'Filter messages like') or (starts-with(normalize-space(.),'L') and contains(.,'c th') and contains(.,'gi'))][not(*)][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//span[contains(.,'Filter messages like') or (starts-with(normalize-space(.),'L') and contains(.,'c th') and contains(.,'gi'))][not(*)][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='From' or normalize-space(.)='Từ']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>verifyValue</td><td>xpath=(//label[normalize-space(.)='From' or normalize-space(.)='Từ']/following::input[1])[1]</td><td>regexp:.+@.+</td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_11_NAV_04: Huy thao tac xoa bo loc (Cancel)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=65#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>5000</td></tr>
+<tr><td>type</td><td>xpath=(//label[normalize-space(.)='Subject' or normalize-space(.)='Chủ đề' or normalize-space(.)='Tiêu đề']/following::input[1])[1]</td><td>[Urgent]</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc'][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//label[starts-with(normalize-space(.),'Star it') or starts-with(normalize-space(.),'Gắn dấu sao')])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' or self::div or self::span][normalize-space(.)='Create filter' or normalize-space(.)='Tạo bộ lọc' or normalize-space(.)='Update filter' or starts-with(normalize-space(.),'Cập nhật bộ lọc')][not(ancestor::*[contains(@style,'display: none')])])[last()]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[contains(@class,'bAq')][contains(.,'filter') or contains(.,'Đã tạo b') or contains(.,'Đã c')])[last()]</td><td>8000</td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=66#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]][not(.//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]])]//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>800</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//button[@name='cancel' or normalize-space(.)='Cancel' or (starts-with(normalize-space(.),'H') and string-length(normalize-space(.))&lt;5)] | //button[@name='ok']/preceding-sibling::button | //button[@name='ok']/following-sibling::button)[last()]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//button[@name='cancel' or normalize-space(.)='Cancel' or (starts-with(normalize-space(.),'H') and string-length(normalize-space(.))&lt;5)] | //button[@name='ok']/preceding-sibling::button | //button[@name='ok']/following-sibling::button)[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa']])[1]</td><td></td></tr>
+<tr><td>echo</td><td>Don du lieu: xoa bo loc '[Urgent]'</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/?kr=67#settings/filters</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='link'][normalize-space(translate(.,'&#160;',' '))='Create a new filter' or starts-with(normalize-space(translate(.,'&#160;',' ')),'Tạo bộ lọc m')][not(ancestor::*[contains(@style,'display: none')])])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]][not(.//tr[contains(.,'[Urgent]')][.//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')]])]//*[normalize-space(text())='delete' or normalize-space(text())='xóa' or normalize-space(text())='Xóa' or starts-with(normalize-space(text()),'x')])[1]</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td>5000</td></tr>
+<tr><td>click</td><td>xpath=(//button[@name='ok' or normalize-space(.)='OK'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+</tbody></table><br/>
+</body></html>
