@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title>ASM7_Suite</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">TC_4.1_ComposeWindow_Management</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://mail.google.com/<datalist><option>https://mail.google.com/</option></datalist></td><td></td></tr>
+<tr><td>pause</td><td>3000<datalist><option>3000</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[text()='Compose' or text()='Soạn thư' or contains(@aria-label,'Compose') or contains(@aria-label,'Soạn thư')]<datalist><option>xpath=//div[text()='Compose' or text()='Soạn thư' or contains(@aria-label,'Compose') or contains(@aria-label,'Soạn thư')]</option></datalist></td><td></td></tr>
+<tr><td>pause</td><td>2000<datalist><option>2000</option></datalist></td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//input[contains(@aria-label,'To') or contains(@aria-label,'Người nhận') or @peoplekit-id]<datalist><option>xpath=//input[contains(@aria-label,'To') or contains(@aria-label,'Người nhận') or @peoplekit-id]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//*[contains(@aria-label,'Full screen') or contains(@data-tooltip,'Full screen') or contains(@aria-label,'Toàn màn hình') or contains(@data-tooltip,'Toàn màn hình')]<datalist><option>xpath=//*[contains(@aria-label,'Full screen') or contains(@data-tooltip,'Full screen') or contains(@aria-label,'Toàn màn hình') or contains(@data-tooltip,'Toàn màn hình')]</option></datalist></td><td></td></tr>
+<tr><td>pause</td><td>1500<datalist><option>1500</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//*[contains(@aria-label,'Exit full screen') or contains(@data-tooltip,'Exit full screen') or contains(@aria-label,'Thoát khỏi chế độ toàn màn hình') or contains(@data-tooltip,'Thoát khỏi chế độ toàn màn hình') or contains(@aria-label,'Thoát chế độ toàn màn hình') or contains(@data-tooltip,'Thoát chế độ toàn màn hình') or contains(@aria-label,'Thoát toàn màn hình') or contains(@data-tooltip,'Thoát toàn màn hình')]<datalist><option>xpath=//*[contains(@aria-label,'Exit full screen') or contains(@data-tooltip,'Exit full screen') or contains(@aria-label,'Thoát khỏi chế độ toàn màn hình') or contains(@data-tooltip,'Thoát khỏi chế độ toàn màn hình') or contains(@aria-label,'Thoát chế độ toàn màn hình') or contains(@data-tooltip,'Thoát chế độ toàn màn hình') or contains(@aria-label,'Thoát toàn màn hình') or contains(@data-tooltip,'Thoát toàn màn hình')]</option></datalist></td><td></td></tr>
+<tr><td>pause</td><td>1500<datalist><option>1500</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//*[contains(@aria-label,'Minimize') or contains(@data-tooltip,'Minimize') or contains(@aria-label,'Thu nhỏ') or contains(@data-tooltip,'Thu nhỏ')]<datalist><option>xpath=//*[contains(@aria-label,'Minimize') or contains(@data-tooltip,'Minimize') or contains(@aria-label,'Thu nhỏ') or contains(@data-tooltip,'Thu nhỏ')]</option></datalist></td><td></td></tr>
+<tr><td>pause</td><td>1500<datalist><option>1500</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//*[contains(text(),'New Message') or contains(text(),'Thư mới') or contains(text(),'Tin nhắn mới') or contains(@data-tooltip,'New Message') or contains(@aria-label,'New Message')]<datalist><option>xpath=//*[contains(text(),'New Message') or contains(text(),'Thư mới') or contains(text(),'Tin nhắn mới') or contains(@data-tooltip,'New Message') or contains(@aria-label,'New Message')]</option></datalist></td><td></td></tr>
+<tr><td>pause</td><td>1500<datalist><option>1500</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//*[contains(@aria-label,'Save & close') or contains(@data-tooltip,'Save & close') or contains(@aria-label,'Lưu và đóng') or contains(@data-tooltip,'Lưu và đóng')]<datalist><option>xpath=//*[contains(@aria-label,'Save & close') or contains(@data-tooltip,'Save & close') or contains(@aria-label,'Lưu và đóng') or contains(@data-tooltip,'Lưu và đóng')]</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">TC_4.2_SendEmail_Success_Flows</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>xpath=//div[text()='Compose' or text()='Soạn thư' or contains(@aria-label,'Compose') or contains(@aria-label,'Soạn thư')]<datalist><option>xpath=//div[text()='Compose' or text()='Soạn thư' or contains(@aria-label,'Compose') or contains(@aria-label,'Soạn thư')]</option></datalist></td><td></td></tr>
+<tr><td>pause</td><td>2000<datalist><option>2000</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>xpath=//input[contains(@aria-label,'To') or contains(@aria-label,'Người nhận') or @peoplekit-id]<datalist><option>xpath=//input[contains(@aria-label,'To') or contains(@aria-label,'Người nhận') or @peoplekit-id]</option></datalist></td><td>khoadang2005121@gmail.com</td></tr>
+<tr><td>sendKeys</td><td>xpath=//input[contains(@aria-label,'To') or contains(@aria-label,'Người nhận') or @peoplekit-id]<datalist><option>xpath=//input[contains(@aria-label,'To') or contains(@aria-label,'Người nhận') or @peoplekit-id]</option></datalist></td><td>${KEY_ENTER}</td></tr>
+<tr><td>type</td><td>xpath=//input[@name='subjectbox']<datalist><option>xpath=//input[@name='subjectbox']</option></datalist></td><td>Test Gui Thu Co Ban ASM7 - Nguyễn Khoa Đăng</td></tr>
+<tr><td>click</td><td>xpath=//div[@role='textbox']<datalist><option>xpath=//div[@aria-label='Message Body' or @aria-label='Nội dung thư' or @role='textbox']</option><option>xpath=//div[@role='textbox']</option></datalist></td><td></td></tr>
+<tr><td>pause</td><td>1500<datalist><option>1500</option></datalist></td><td></td></tr>
+<tr><td>runScript</td><td>var el = document.querySelector(\"div[role='textbox']\"); if(el){ el.focus(); document.execCommand('insertText', false, 'Day la noi dung thu kiem thu tu dong thuoc Chuc nang 4.'); }<datalist><option>xpath=//div[@aria-label='Message Body' or @aria-label='Nội dung thư' or @role='textbox']</option><option>xpath=//div[@role='textbox']</option><option>document.querySelector("div[role='textbox']").innerText = "Day la noi dung thu kiem thu tu dong thuoc Chuc nang 4.";</option><option>var el = document.querySelector(\"div[role='textbox']\"); if(el){ el.focus(); el.textContent = 'Day la noi dung thu kiem thu tu dong thuoc Chuc nang 4.'; el.dispatchEvent(new Event('input', { bubbles: true })); }</option><option>var el = document.querySelector(\"div[aria-label='Message Body'], div[aria-label='Nội dung thư'], div[role='textbox']\"); if(el){ el.focus(); document.execCommand('insertText', false, 'Day la noi dung thu kiem thu tu dong thuoc Chuc nang 4.'); }</option><option>var el = document.querySelector(\"div[role='textbox']\"); if(el){ el.focus(); document.execCommand('insertText', false, 'Day la noi dung thu kiem thu tu dong thuoc Chuc nang 4.'); }</option></datalist></td><td></td></tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')]<datalist><option>xpath=//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')]</option><option>xpath=//div[@role='button' and (starts-with(@aria-label,'Gửi') or starts-with(@aria-label,'Send'))]</option><option>xpath=//div[@aria-label='Message Body' or @aria-label='Nội dung thư' or @role='textbox']</option><option>xpath=//div[@role='button' and (contains(@aria-label,'Send') or contains(@aria-label,'Gửi') or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')) and not(contains(@aria-label,'more')) and not(contains(@aria-label,'khác'))]</option></datalist></td><td></td></tr>
+<tr><td>pause</td><td>3000<datalist><option>3000</option></datalist></td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=//input[@name='subjectbox']<datalist><option>xpath=//input[@name='subjectbox']</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//a[contains(@href,'#sent') or contains(text(),'Sent') or contains(text(),'Đã gửi')]<datalist><option>xpath=//a[contains(@href,'#sent') or contains(text(),'Sent') or contains(text(),'Đã gửi')]</option><option>xpath=//a[contains(@href,'#sent')]</option></datalist></td><td></td></tr>
+<tr><td>pause</td><td>3000<datalist><option>3000</option></datalist></td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//tr[@role='row']//span[contains(text(),'Test Gui Thu Co Ban ASM7')]<datalist><option>xpath=//tr[@role='row']//span[contains(text(),'Test Gui Thu Co Ban ASM7')]</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">TC_4.3_SendEmail_Negative_Validation</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>xpath=//div[text()='Compose' or text()='Soạn thư' or contains(@aria-label,'Compose') or contains(@aria-label,'Soạn thư')]<datalist><option>xpath=//div[text()='Compose' or text()='Soạn thư' or contains(@aria-label,'Compose') or contains(@aria-label,'Soạn thư')]</option></datalist></td><td></td></tr>
+<tr><td>pause</td><td>2000<datalist><option>2000</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>xpath=//input[contains(@aria-label,'To') or contains(@aria-label,'Người nhận') or @peoplekit-id]<datalist><option>xpath=//input[contains(@aria-label,'To') or contains(@aria-label,'Người nhận') or @peoplekit-id]</option></datalist></td><td>abc@gmail..com</td></tr>
+<tr><td>sendKeys</td><td>xpath=//input[contains(@aria-label,'To') or contains(@aria-label,'Người nhận') or @peoplekit-id]<datalist><option>xpath=//input[contains(@aria-label,'To') or contains(@aria-label,'Người nhận') or @peoplekit-id]</option></datalist></td><td>${KEY_ENTER}</td></tr>
+<tr><td>type</td><td>xpath=//input[@name='subjectbox']<datalist><option>xpath=//input[@name='subjectbox']</option></datalist></td><td>Test Gmail Error Mail Format</td></tr>
+<tr><td>click</td><td>xpath=//div[@aria-label='Message Body' or @aria-label='Nội dung thư' or @role='textbox']<datalist><option>rget": "xpath=//div[@aria-label='Message Body' or @aria-label='Nội dung thư' or @role='textbox']</option><option>xpath=//div[@aria-label='Message Body' or @aria-label='Nội dung thư' or @role='textbox']</option></datalist></td><td></td></tr>
+<tr><td>pause</td><td>1500<datalist><option>1500</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')]<datalist><option>xpath=//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')]</option></datalist></td><td></td></tr>
+<tr><td>pause</td><td>2000<datalist><option>2000</option></datalist></td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//div[text()='Lỗi' or contains(text(),'Không nhận dạng được') or contains(text(),'Lỗi')] | //div[@role='alertdialog']<datalist><option>xpath=//div[contains(text(),'Error') or contains(text(),'Please make sure') or contains(text(),'Không hợp lệ') or contains(text(),'Hãy đảm bảo')]</option><option>xpath=//div[text()='Lỗi' or contains(text(),'Không nhận dạng được') or contains(text(),'Lỗi')] | //div[@role='alertdialog']</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">TC_4.4_SendEmail_NoSubject_ConfirmationDialog</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>xpath=//div[text()='Compose' or text()='Soạn thư' or contains(@aria-label,'Compose') or contains(@aria-label,'Soạn thư')]<datalist><option>xpath=//div[text()='Compose' or text()='Soạn thư' or contains(@aria-label,'Compose') or contains(@aria-label,'Soạn thư')]</option></datalist></td><td></td></tr>
+<tr><td>pause</td><td>2000<datalist><option>2000</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>xpath=//input[contains(@aria-label,'To') or contains(@aria-label,'Người nhận') or @peoplekit-id]<datalist><option>xpath=//input[contains(@aria-label,'To') or contains(@aria-label,'Người nhận') or @peoplekit-id]</option></datalist></td><td>khoadang2005121@gmail.com</td></tr>
+<tr><td>sendKeys</td><td>xpath=//input[contains(@aria-label,'To') or contains(@aria-label,'Người nhận') or @peoplekit-id]<datalist><option>xpath=//input[contains(@aria-label,'To') or contains(@aria-label,'Người nhận') or @peoplekit-id]</option></datalist></td><td>${KEY_ENTER}</td></tr>
+<tr><td>runScript</td><td>window.confirm = function() { return false; };<datalist><option></option><option>window.confirm = function() { return false; };</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')]<datalist><option>xpath=//div[@role='button' and (starts-with(@aria-label,'Gửi') or starts-with(@aria-label,'Send'))]</option><option>xpath=//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')]</option><option>xpath=//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')]</option></datalist></td><td></td></tr>
+<tr><td>pause</td><td>1500<datalist><option>1500</option></datalist></td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//input[@name='subjectbox']<datalist><option>xpath=//*[contains(text(),'without a subject') or contains(text(),'không có chủ đề')]</option><option>*Gửi thư này mà không có chủ đề*</option><option>*</option><option>xpath=//input[@name='subjectbox']</option></datalist></td><td></td></tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//*[contains(@aria-label,'Save & close') or contains(@data-tooltip,'Save & close') or contains(@aria-label,'Lưu và đóng') or contains(@data-tooltip,'Lưu và đóng')]<datalist><option>xpath=//*[contains(@aria-label,'Save & close') or contains(@data-tooltip,'Save & close') or contains(@aria-label,'Lưu và đóng') or contains(@data-tooltip,'Lưu và đóng')]</option><option>xpath=//*[contains(@aria-label,'Save & close') or contains(@data-tooltip,'Save & close') or contains(@aria-label,'Lưu và đóng') or contains(@data-tooltip,'Lưu và đóng')]</option></datalist></td><td></td></tr>
+</tbody></table>
+</body>
+</html>
