@@ -20,27 +20,27 @@ Dự án tích hợp \& thực thi kịch bản kiểm thử tự động (Autom
 Repository được cấu trúc để chứa đồng thời các kịch bản kiểm thử dạng `.side` (Katalon Recorder / Selenium IDE) và các mã nguồn `.java` (Selenium WebDriver), bảo đảm các thành viên có thể phát triển độc lập và tích hợp vào một dự án chung.
 
 ```text
-Group07\\\_SoftwareTesting\\\_Gmail/
-├── README.md                           # Tài liệu hướng dẫn cài đặt \\\& chạy project
-├── Group07\\\_GmailProject.xlsx           # File Excel tổng hợp toàn bộ Test Case của nhóm
+Group07_SoftwareTesting_Gmail/
+├── README.md                           # Tài liệu hướng dẫn cài đặt & chạy project
+├── Group07_GmailProject.xlsx           # File Excel tổng hợp toàn bộ Test Case của nhóm
 ├── pom.xml                             # Cấu hình Maven (dành cho Selenium Java)
 │
 ├── Automation Testing Project - Group 07/                            # Thư mục chứa toàn bộ Automation Scripts
-│   ├── katalon\\\_side/           # Chứa các file kịch bản .side / .json
-│   │   ├── MemberX\\\_Feature.side	# Thành viên trong nhóm\\\_Chức năng test
-│   │   ├── MemberX\\\_Feature.side
-│   │   └── MemberX\\\_Feature.side
+│   ├── katalon_side/           # Chứa các file kịch bản .side / .json
+│   │   ├── MemberX_Feature.side	# Thành viên trong nhóm_Chức năng test
+│   │   ├── MemberX_Feature.side
+│   │   └── MemberX_Feature.side
 │   │
-│   └── java\\\_selenium/          # Chứa mã nguồn Selenium Java (.java)
-│       └── MemberX\\\_Feature.java   
+│   └── java_selenium/          # Chứa mã nguồn Selenium Java (.java)
+│       └── MemberX_Feature.java   
 │
 ├── Test Report - Group 07/                            # Thư mục lưu báo cáo kết quả kiểm thử
 │   ├── test-report.html     # Báo cáo kết quả tổng hợp Test Suite
 │   └── test-execution-log.txt          # File Log thực thi
 │
 └── Envidence - Group 07/                        # Ảnh chụp màn hình minh chứng thực thi
-    ├── execution\\\_katalon.png
-    └── execution\\\_java.png
+    ├── execution_katalon.png
+    └── execution_java.png
 ```
 
 \---
@@ -63,7 +63,7 @@ Group07\\\_SoftwareTesting\\\_Gmail/
 
 1. Mở trình duyệt Google Chrome và khởi động tiện ích **Katalon Recorder**.
 2. Đăng nhập sẵn tài khoản Gmail kiểm thử trên trình duyệt.
-3. Trong giao diện Katalon Recorder, chọn **Open Test Suite / Open Project** $\\rightarrow$ Trỏ tới thư mục `./scripts/katalon\\\_side\\\_scripts/` và chọn file `.side` cần chạy.
+3. Trong giao diện Katalon Recorder, chọn **Open Test Suite / Open Project** $\\rightarrow$ Trỏ tới thư mục `.Automation Testing Project - Group 07/katalon_side/` và chọn file `.side` cần chạy.
 4. Chọn Test Suite tổng và nhấn **Play Test Suite**.
 
 ### Cách 2: Chạy kịch bản Selenium Java (`.java`)
@@ -75,26 +75,26 @@ Group07\\\_SoftwareTesting\\\_Gmail/
    mvn clean install
    ```
 
-3. Mở file test (ví dụ: `Member2\\\_ComposeDraft.java`) trong thư mục `./scripts/java\\\_selenium\\\_scripts/` và chọn **Run Test** (hoặc dùng JUnit / TestNG Runner).
+3. Mở file test (ví dụ: `MemberX_Feature.java`) trong thư mục `.Automation Testing Project - Group 07/java_selenium/` và chọn **Run Test** (hoặc dùng JUnit / TestNG Runner).
 
 \---
 
 ## 📊 BÁO CÁO KẾT QUẢ KIỂM THỬ (TEST REPORT)
 
-Sau khi hoàn tất thực thi toàn bộ Test Suite, báo cáo kết quả tổng hợp sẽ được xuất và lưu trữ tại thư mục `reports/` theo quy chuẩn đặt tên:
+Sau khi hoàn tất thực thi toàn bộ Test Suite, báo cáo kết quả tổng hợp sẽ được xuất và lưu trữ tại thư mục `Test Report - Group 07/` theo quy chuẩn đặt tên:
 
-* **Tên file báo cáo chung:** `Test Report - Group 07.html`
+* **Tên file báo cáo chung:** `Test Report - Tên người làm - (ngày test).html`
 * **Cách xuất báo cáo từ Katalon Recorder:**
 
   1. Sau khi chạy xong Test Suite, chuyển sang tab **Log / Test Execution Summary**.
   2. Chọn **Export Logs** $\\rightarrow$ **Export HTML Report**.
-  3. Đổi tên file thành `Test Report - Group 07.html` và lưu vào thư mục `reports/`.
+  3. Đổi tên file thành `Test Report - Tên người làm - (ngày test).html` và lưu vào thư mục `Test Report - Group 07/`.
 
 \---
 
 ## 📝 QUY ĐỊNH COMMIT \& TÍCH HỢP CODE (GIT WORKFLOW)
 
 1. Mỗi thành viên làm việc trên branch cá nhân (`feature/member-name`).
-2. Đưa file script cá nhân vào đúng thư mục (`katalon\\\_side\\\_scripts/` hoặc `java\\\_selenium\\\_scripts/`).
+2. Đưa file script cá nhân vào đúng thư mục (`katalon_side_/` hoặc `java_selenium/`).
 3. Tạo Pull Request (PR) về branch `dev` và thông báo cho trưởng nhóm review trước khi Merge.
 
