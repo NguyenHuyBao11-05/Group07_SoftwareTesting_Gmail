@@ -1,0 +1,1426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="selenium.base" href="https://mail.google.com/" />
+<title>23130203_TruongPhucNen_ASM7</title></head><body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_VIS_01: Kiem tra cac lua chon Density hien thi trong Quick settings</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Comfortable'])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_VIS_02: Kiem tra giao dien lua chon Inbox type</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Default'])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Important first'])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Unread first'])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Starred first'])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Priority Inbox'])[1]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_VIS_03: Kiem tra khu vuc Reading pane trong Quick settings</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='No split'])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='Right of inbox'])[1]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='Below inbox'])[1]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_VIS_04: Kiem tra bo cuc danh sach thu sau khi doi Density</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetHeight</td><td>h1</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetHeight</td><td>h2</td></tr>
+<tr><td>echo</td><td>Compact=${h1} Default=${h2}</td><td></td></tr>
+<tr><td>assertEval</td><td>${h2} &gt; ${h1}</td><td>true</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]//span[contains(@class,'bog')]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_VIS_05: Kiem tra bo cuc Reading pane ben phai va phia duoi</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='Right of inbox'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='Right of inbox'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetWidth</td><td>wRight</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='Below inbox'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='Below inbox'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetWidth</td><td>wBelow</td></tr>
+<tr><td>echo</td><td>Right=${wRight} Below=${wBelow}</td><td></td></tr>
+<tr><td>assertEval</td><td>${wBelow} &gt; ${wRight}</td><td>true</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='No split'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='No split'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_VAL_01: Kiem tra cac muc Density hop le (phan vung tuong duong)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetHeight</td><td>h0</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Comfortable'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Comfortable'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetHeight</td><td>h1</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetHeight</td><td>h2</td></tr>
+<tr><td>echo</td><td>Default=${h0} Comfortable=${h1} Compact=${h2}</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_VAL_02: Kiem tra bien giua mat do thua nhat va day nhat</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetHeight</td><td>h0</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Comfortable'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Comfortable'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetHeight</td><td>h1</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetHeight</td><td>h2</td></tr>
+<tr><td>assertEval</td><td>${h0} &gt; ${h2}</td><td>true</td></tr>
+<tr><td>assertEval</td><td>${h0} &gt;= ${h1} &amp;&amp; ${h1} &gt;= ${h2}</td><td>true</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_VAL_05: Kiem tra trang thai don nhat cua Density sau khi doi nhieu lan</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetHeight</td><td>h1</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Comfortable'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Comfortable'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetHeight</td><td>h3</td></tr>
+<tr><td>assertEval</td><td>${h3} == ${h1}</td><td>true</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_FUN_01: Doi Density sang Default</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetHeight</td><td>h1</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetHeight</td><td>h2</td></tr>
+<tr><td>assertEval</td><td>${h2} &gt; ${h1}</td><td>true</td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_FUN_02: Doi Density sang Comfortable</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetHeight</td><td>h1</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Comfortable'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Comfortable'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetHeight</td><td>h2</td></tr>
+<tr><td>assertEval</td><td>${h2} &gt; ${h1}</td><td>true</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_FUN_03: Doi Density sang Compact</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Comfortable'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Comfortable'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetHeight</td><td>h1</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetHeight</td><td>h2</td></tr>
+<tr><td>assertEval</td><td>${h2} &lt; ${h1}</td><td>true</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_FUN_04: Chuyen Inbox type sang Unread first</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Unread first'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Unread first'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[normalize-space(text())='Everything else']</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Default'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Default'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_FUN_05: Chuyen Inbox type sang Important first</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Important first'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Important first'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[normalize-space(text())='Everything else']</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Default'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Default'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_FUN_06: Chuyen Inbox type sang Starred first</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Starred first'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Starred first'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[normalize-space(text())='Everything else']</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Default'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Default'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_FUN_07: Chuyen Inbox type ve Default</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Unread first'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Unread first'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Default'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Default'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=//*[normalize-space(text())='Everything else']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_FUN_08: Bat Reading pane o ben phai</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='Right of inbox'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='Right of inbox'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//span[contains(@class,'bog')]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>storeEval</td><td>(function(){var r=document.querySelector('tr.zA');return !!(r &amp;&amp; r.offsetParent!==null);})()</td><td>v</td></tr>
+<tr><td>assertEval</td><td>${v}</td><td>true</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='No split'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='No split'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_FUN_09: Doi Reading pane tu ben phai xuong phia duoi</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='Right of inbox'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='Right of inbox'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetWidth</td><td>wRight</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='Below inbox'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='Below inbox'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetWidth</td><td>wBelow</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//span[contains(@class,'bog')]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>storeEval</td><td>(function(){var r=document.querySelector('tr.zA');return !!(r &amp;&amp; r.offsetParent!==null);})()</td><td>v</td></tr>
+<tr><td>assertEval</td><td>${wBelow} &gt; ${wRight}</td><td>true</td></tr>
+<tr><td>assertEval</td><td>${v}</td><td>true</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='No split'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='No split'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_FUN_10: Tat Reading pane (No split)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='Right of inbox'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='Right of inbox'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='No split'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='No split'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//span[contains(@class,'bog')]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>storeEval</td><td>(function(){var r=document.querySelector('tr.zA');return !!(r &amp;&amp; r.offsetParent!==null);})()</td><td>v</td></tr>
+<tr><td>assertEval</td><td>${v}</td><td>false</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_NAV_01: Kiem tra cau hinh Density duoc giu sau khi tai lai trang</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetHeight</td><td>h1</td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetHeight</td><td>h2</td></tr>
+<tr><td>assertEval</td><td>${h2} == ${h1}</td><td>true</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_NAV_02: Kiem tra Inbox type duoc giu sau khi tai lai trang</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Unread first'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Unread first'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[normalize-space(text())='Everything else']</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[normalize-space(text())='Everything else']</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Default'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Default'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_NAV_03: Kiem tra Reading pane duoc giu sau khi tai lai trang</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='Right of inbox'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='Right of inbox'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetWidth</td><td>w1</td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetWidth</td><td>w2</td></tr>
+<tr><td>assertEval</td><td>${w2} == ${w1}</td><td>true</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='No split'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='No split'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_NAV_04: Kiem tra cau hinh sau khi roi Gmail va mo lai</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetHeight</td><td>h1</td></tr>
+<tr><td>open</td><td>https://www.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>storeEval</td><td>window.document.querySelectorAll('tr.zA')[0].offsetHeight</td><td>h2</td></tr>
+<tr><td>assertEval</td><td>${h2} == ${h1}</td><td>true</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_01_EXC_01: Kiem tra tiep tuc dung Inbox sau khi thay doi nhieu cai dat lien tiep</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Compact'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Unread first'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Unread first'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='Right of inbox'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='Right of inbox'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]//span[contains(@class,'bog')]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Density']/following::*[normalize-space(text())='Default'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Default'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Inbox type']/following::*[normalize-space(text())='Default'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[(@role='button' or self::a) and (@aria-label='Settings' or @data-tooltip='Settings')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[normalize-space(text())='Quick settings']</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='No split'])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Reading pane']/following::*[normalize-space(text())='No split'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_02_VIS_03: Kiem tra giao dien cac muc chinh trong tab General</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Language')]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Maximum page size')]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Undo Send')]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Default reply behavior')]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Default text style')]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Signature')]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Vacation responder')]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_02_VIS_04: Kiem tra khung xem truoc Default text style</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'This is what your body text will look like')]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_02_VIS_05: Kiem tra nut Save Changes va Cancel o cuoi trang Settings</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//button[normalize-space(.)='Cancel']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_02_VAL_02: Kiem tra tao chu ky voi ten rong</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Create new'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[contains(text(),'Name new signature')]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Create']</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Name new signature')]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//button[normalize-space(.)='Cancel'])[last()]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_02_VAL_03: Kiem tra danh sach gia tri cua Maximum page size</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//select[option[contains(.,'100')] and option[contains(.,'25')] and option[contains(.,'15')]]/option[normalize-space(.)='10']</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//select[option[contains(.,'100')] and option[contains(.,'25')] and option[contains(.,'15')]]/option[normalize-space(.)='15']</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//select[option[contains(.,'100')] and option[contains(.,'25')] and option[contains(.,'15')]]/option[normalize-space(.)='20']</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//select[option[contains(.,'100')] and option[contains(.,'25')] and option[contains(.,'15')]]/option[normalize-space(.)='25']</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//select[option[contains(.,'100')] and option[contains(.,'25')] and option[contains(.,'15')]]/option[normalize-space(.)='50']</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//select[option[contains(.,'100')] and option[contains(.,'25')] and option[contains(.,'15')]]/option[normalize-space(.)='100']</td><td></td></tr>
+<tr><td>verifyXpathCount</td><td>xpath=//select[option[contains(.,'100')] and option[contains(.,'25')] and option[contains(.,'15')]]/option</td><td>6</td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_02_VAL_04: Kiem tra danh sach gia tri cua Undo Send cancellation period</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//select[option[contains(.,'30')] and option[contains(.,'20')] and not(option[contains(.,'100')])]/option[normalize-space(.)='5' or normalize-space(.)='5 seconds']</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//select[option[contains(.,'30')] and option[contains(.,'20')] and not(option[contains(.,'100')])]/option[normalize-space(.)='10' or normalize-space(.)='10 seconds']</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//select[option[contains(.,'30')] and option[contains(.,'20')] and not(option[contains(.,'100')])]/option[normalize-space(.)='20' or normalize-space(.)='20 seconds']</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//select[option[contains(.,'30')] and option[contains(.,'20')] and not(option[contains(.,'100')])]/option[normalize-space(.)='30' or normalize-space(.)='30 seconds']</td><td></td></tr>
+<tr><td>verifyXpathCount</td><td>xpath=//select[option[contains(.,'30')] and option[contains(.,'20')] and not(option[contains(.,'100')])]/option</td><td>4</td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_02_FUN_01: Tao chu ky moi ASM7_Test</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Create new'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[contains(text(),'Name new signature')]</td><td>8000</td></tr>
+<tr><td>type</td><td>xpath=(//*[contains(text(),'Name new signature')]/following::input)[1]</td><td>ASM7_Test</td></tr>
+<tr><td>runScript</td><td>var i=document.evaluate(&quot;(//*[contains(text(),'Name new signature')]/following::input)[1]&quot;,document,null,9,null).singleNodeValue;i.dispatchEvent(new Event('input',{bubbles:true}));i.dispatchEvent(new Event('keyup',{bubbles:true}));i.dispatchEvent(new Event('change',{bubbles:true}));</td><td></td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Create']</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>waitForElementNotPresent</td><td>xpath=//*[contains(text(),'Name new signature')]</td><td>8000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//div[@contenteditable='true']</td><td>10000</td></tr>
+<tr><td>runScript</td><td>var n=document.evaluate(&quot;(//div[@contenteditable='true'])[1]&quot;,document,null,9,null).singleNodeValue;n.focus();document.execCommand('selectAll',false,null);document.execCommand('insertText',false,'ASM7 signature - Truong Phuc Nen');</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//div[@contenteditable='true'][contains(.,'ASM7 signature')]</td><td></td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//*[contains(normalize-space(.),'ASM7_Test') and not(*[contains(normalize-space(.),'ASM7_Test')])])[1]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_02_VIS_01: Kiem tra giao dien muc Signature trong Settings &gt; General</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[normalize-space(text())='Create new']</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'signature defaults') and not(*[contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'signature defaults')])]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'for new emails use') and not(*[contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'for new emails use')])]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'on reply/forward use') and not(*[contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'on reply/forward use')])]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_02_FUN_02: Chinh sua noi dung chu ky da tao</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>click</td><td>xpath=(//*[not(self::option) and contains(normalize-space(.),'ASM7_Test') and not(*[contains(normalize-space(.),'ASM7_Test')])])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>runScript</td><td>var n=document.evaluate(&quot;(//div[@contenteditable='true'])[1]&quot;,document,null,9,null).singleNodeValue;n.focus();document.execCommand('selectAll',false,null);document.execCommand('insertText',false,'ASM7 edited signature');</td><td></td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>click</td><td>xpath=(//*[not(self::option) and contains(normalize-space(.),'ASM7_Test') and not(*[contains(normalize-space(.),'ASM7_Test')])])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//div[@contenteditable='true'][contains(.,'ASM7 edited signature')]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_02_FUN_03: Dat chu ky mac dinh cho thu moi</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>select</td><td>xpath=(//select[option[contains(translate(normalize-space(.),'NOSIGATURE','nosigature'),'no signature')]])[1]</td><td>label=ASM7_Test</td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@gh='cm']</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//div[@aria-label='Message Body' or @aria-label='Nội dung thư']</td><td>10000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//div[contains(@class,'gmail_signature')]</td><td>10000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//div[contains(@class,'gmail_signature')]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@aria-label='Save &amp; close' or @data-tooltip='Save &amp; close'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_02_VIS_02: Kiem tra hien thi chu ky trong cua so soan thu</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@gh='cm']</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//div[@aria-label='Message Body' or @aria-label='Nội dung thư']</td><td>10000</td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//div[contains(@class,'gmail_signature')]</td><td>10000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//div[contains(@class,'gmail_signature')]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//div[contains(@class,'gmail_signature')][contains(.,'ASM7')]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@aria-label='Save &amp; close' or @data-tooltip='Save &amp; close'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_02_VAL_05: Kiem tra chu ky chua tieng Viet co dau va ky tu dac biet</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>click</td><td>xpath=(//*[not(self::option) and contains(normalize-space(.),'ASM7_Test') and not(*[contains(normalize-space(.),'ASM7_Test')])])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>runScript</td><td>var n=document.evaluate(&quot;(//div[@contenteditable='true'])[1]&quot;,document,null,9,null).singleNodeValue;n.focus();document.execCommand('selectAll',false,null);document.execCommand('insertText',false,'Nguyễn Văn A | Công ty ABC &amp; Co.');</td><td></td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>click</td><td>xpath=(//*[not(self::option) and contains(normalize-space(.),'ASM7_Test') and not(*[contains(normalize-space(.),'ASM7_Test')])])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//div[@contenteditable='true'][contains(.,'Nguyễn Văn A')]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//div[@contenteditable='true'][contains(.,'Công ty ABC')]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_02_NAV_04: Kiem tra cau hinh chu ky duoc giu sau khi tai lai trang</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>verifySelectedLabel</td><td>xpath=(//select[option[contains(translate(normalize-space(.),'NOSIGATURE','nosigature'),'no signature')]])[1]</td><td>ASM7_Test</td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_02_NAV_02: Kiem tra bam Cancel khi dang sua chu ky (chua luu)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>click</td><td>xpath=(//*[not(self::option) and contains(normalize-space(.),'ASM7_Test') and not(*[contains(normalize-space(.),'ASM7_Test')])])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>runScript</td><td>var n=document.evaluate(&quot;(//div[@contenteditable='true'])[1]&quot;,document,null,9,null).singleNodeValue;n.focus();document.execCommand('selectAll',false,null);document.execCommand('insertText',false,'cancel test');</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//button[normalize-space(.)='Save Changes']/following::button[normalize-space(.)='Cancel'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>click</td><td>xpath=(//*[not(self::option) and contains(normalize-space(.),'ASM7_Test') and not(*[contains(normalize-space(.),'ASM7_Test')])])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=//div[@contenteditable='true'][contains(.,'cancel test')]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_02_FUN_08: Doi Maximum page size sang 25</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>select</td><td>xpath=//select[option[contains(.,'100')] and option[contains(.,'25')] and option[contains(.,'15')]]</td><td>index=3</td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>storeXpathCount</td><td>xpath=//div[@role='main']//tr[contains(@class,'zA')]</td><td>n</td></tr>
+<tr><td>echo</td><td>So hoi thoai: ${n}</td><td></td></tr>
+<tr><td>assertEval</td><td>${n} &gt; 0 &amp;&amp; ${n} &lt;= 25</td><td>true</td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>select</td><td>xpath=//select[option[contains(.,'100')] and option[contains(.,'25')] and option[contains(.,'15')]]</td><td>index=4</td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_02_FUN_09: Bat Undo Send voi thoi gian huy 30 giay</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>select</td><td>xpath=//select[option[contains(.,'30')] and option[contains(.,'20')] and not(option[contains(.,'100')])]</td><td>index=3</td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>verifySelectedLabel</td><td>xpath=//select[option[contains(.,'30')] and option[contains(.,'20')] and not(option[contains(.,'100')])]</td><td>regexp:^30</td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_02_NAV_01: Kiem tra truy cap truc tiep Settings &gt; General bang URL</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>verifyLocation</td><td>regexp:.*#settings/general.*</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Signature')]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_02_FUN_10: Xoa chu ky ASM7_Test</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>click</td><td>xpath=(//*[not(self::option) and contains(normalize-space(.),'ASM7_Test') and not(*[contains(normalize-space(.),'ASM7_Test')])])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@aria-label='Delete' or @data-tooltip='Delete' or @title='Delete' or @alt='Delete' or (normalize-space(text())='Delete' and not(self::button) and not(self::option))])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//button[normalize-space(.)='Delete' or normalize-space(.)='OK'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=(//*[contains(normalize-space(.),'ASM7_Test') and not(*[contains(normalize-space(.),'ASM7_Test')])])[1]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_03_VIS_01: Kiem tra giao dien muc Vacation responder</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Vacation responder')]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'First day')]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Subject')]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Message')]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Only send a response to people in my Contacts')]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_03_VIS_04: Kiem tra giao dien muc Templates trong tab Advanced</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/advanced</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Templates')]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[normalize-space(text())='Enable']</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[normalize-space(text())='Disable']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_03_FUN_01: Bat Vacation responder voi day du thong tin</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Vacation responder on'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>800</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//*[normalize-space(text())='Subject:']/following::input)[1]</td><td>ASM7 Out of office</td></tr>
+<tr><td>runScript</td><td>var n=document.evaluate(&quot;(//*[normalize-space(text())='Message:']/following::div[@contenteditable='true'])[1]&quot;,document,null,9,null).singleNodeValue;n.focus();document.execCommand('selectAll',false,null);document.execCommand('insertText',false,'Toi dang nghi phep, se phan hoi sau.');</td><td></td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[contains(text(),'End now')]</td><td>15000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'End now')]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_03_VIS_03: Kiem tra banner thong bao khi Vacation responder dang bat</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[contains(text(),'End now')]</td><td>15000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'End now')]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'ASM7 Out of office')]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_03_VAL_02: Kiem tra bo trong Last day (truong tuy chon)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Vacation responder on'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>800</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//*[normalize-space(text())='Subject:']/following::input)[1]</td><td>ASM7 Out of office</td></tr>
+<tr><td>runScript</td><td>var n=document.evaluate(&quot;(//*[normalize-space(text())='Message:']/following::div[@contenteditable='true'])[1]&quot;,document,null,9,null).singleNodeValue;n.focus();document.execCommand('selectAll',false,null);document.execCommand('insertText',false,'Toi dang nghi phep, se phan hoi sau.');</td><td></td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[contains(text(),'End now')]</td><td>15000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'End now')]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_03_VAL_05: Kiem tra Subject chua tieng Viet co dau va emoji</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Vacation responder on'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>800</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//*[normalize-space(text())='Subject:']/following::input)[1]</td><td>Tôi đang nghỉ phép ✈</td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>verifyValue</td><td>xpath=(//*[normalize-space(text())='Subject:']/following::input)[1]</td><td>Tôi đang nghỉ phép ✈</td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_03_FUN_08: Chinh sua Subject khi responder dang bat</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>type</td><td>xpath=(//*[normalize-space(text())='Subject:']/following::input)[1]</td><td>ASM7 Out of office updated</td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>verifyValue</td><td>xpath=(//*[normalize-space(text())='Subject:']/following::input)[1]</td><td>ASM7 Out of office updated</td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_03_NAV_02: Kiem tra cau hinh Vacation responder duoc giu sau khi tai lai trang</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//*[normalize-space(text())='Subject:']/following::input)[1]</td><td></td></tr>
+<tr><td>storeValue</td><td>xpath=(//*[normalize-space(text())='Subject:']/following::input)[1]</td><td>sj</td></tr>
+<tr><td>echo</td><td>Subject: ${sj}</td><td></td></tr>
+<tr><td>assertEval</td><td>'${sj}'.length &gt; 0</td><td>true</td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_03_NAV_01: Kiem tra dieu huong giua tab General va tab Advanced</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>verifyLocation</td><td>regexp:.*#settings/general.*</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Vacation responder')]</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/advanced</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyLocation</td><td>regexp:.*#settings/advanced.*</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Templates')]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_03_FUN_09: Bat tinh nang Templates</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/advanced</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>click</td><td>xpath=(//*[contains(text(),'Templates')]/following::*[normalize-space(text())='Enable'])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@gh='cm']</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//div[@aria-label='Message Body' or @aria-label='Nội dung thư']</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' and (@aria-label='More options' or @data-tooltip='More options')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[@role='menuitem'][contains(.,'Templates')]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[contains(@aria-label,'Discard draft') or contains(@data-tooltip,'Discard draft')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_03_FUN_10: Luu thu nhap thanh template moi</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/advanced</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>click</td><td>xpath=(//*[contains(text(),'Templates')]/following::*[normalize-space(text())='Enable'])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@gh='cm']</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//div[@aria-label='Message Body' or @aria-label='Nội dung thư']</td><td>10000</td></tr>
+<tr><td>type</td><td>xpath=//input[@name='subjectbox']</td><td>ASM7 Template Subject</td></tr>
+<tr><td>runScript</td><td>var n=document.evaluate(&quot;//div[@aria-label='Message Body' or @aria-label='Nội dung thư']&quot;,document,null,9,null).singleNodeValue;n.focus();document.execCommand('selectAll',false,null);document.execCommand('insertText',false,'ASM7 template body');</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' and (@aria-label='More options' or @data-tooltip='More options')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=//*[@role='menuitem'][contains(.,'Templates')]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>mouseOver</td><td>xpath=//*[@role='menuitem'][contains(.,'Save draft as template')]</td><td></td></tr>
+<tr><td>pause</td><td>800</td><td></td></tr>
+<tr><td>click</td><td>xpath=//*[@role='menuitem'][contains(.,'Save draft as template')]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='menuitem'][contains(.,'Save as new template')] | //*[contains(normalize-space(.),'Save as new template') and not(*[contains(normalize-space(.),'Save as new template')])])[1]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='menuitem'][contains(.,'Save as new template')] | //*[contains(normalize-space(.),'Save as new template') and not(*[contains(normalize-space(.),'Save as new template')])])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//div[@role='alertdialog' or @role='dialog']//input[not(@type) or @type='text'])[last()]</td><td>ASM7_Template</td></tr>
+<tr><td>click</td><td>xpath=(//button[normalize-space(.)='Save'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[contains(@aria-label,'Discard draft') or contains(@data-tooltip,'Discard draft')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_03_VIS_05: Kiem tra menu Templates trong cua so Compose khi da bat</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/advanced</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>click</td><td>xpath=(//*[contains(text(),'Templates')]/following::*[normalize-space(text())='Enable'])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@gh='cm']</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//div[@aria-label='Message Body' or @aria-label='Nội dung thư']</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' and (@aria-label='More options' or @data-tooltip='More options')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=//*[@role='menuitem'][contains(.,'Templates')]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(normalize-space(.),'Insert template') and not(*[contains(normalize-space(.),'Insert template')])]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(normalize-space(.),'Save draft as template') and not(*[contains(normalize-space(.),'Save draft as template')])]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(normalize-space(.),'Delete template') and not(*[contains(normalize-space(.),'Delete template')])]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[contains(@aria-label,'Discard draft') or contains(@data-tooltip,'Discard draft')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_03_FUN_05: Chen template vao thu moi</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/advanced</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>click</td><td>xpath=(//*[contains(text(),'Templates')]/following::*[normalize-space(text())='Enable'])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@gh='cm']</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//div[@aria-label='Message Body' or @aria-label='Nội dung thư']</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' and (@aria-label='More options' or @data-tooltip='More options')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=//*[@role='menuitem'][contains(.,'Templates')]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//*[@role='menuitem'][contains(.,'Insert template')] | //*[contains(normalize-space(.),'Insert template') and not(*[contains(normalize-space(.),'Insert template')])])[1]</td><td>8000</td></tr>
+<tr><td>mouseOver</td><td>xpath=(//*[@role='menuitem'][contains(.,'Insert template')] | //*[contains(normalize-space(.),'Insert template') and not(*[contains(normalize-space(.),'Insert template')])])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='menuitem'][contains(.,'Insert template')] | //*[contains(normalize-space(.),'Insert template') and not(*[contains(normalize-space(.),'Insert template')])])[1]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[@role='menuitem'][contains(.,'ASM7_Template')]</td><td>8000</td></tr>
+<tr><td>click</td><td>xpath=//*[@role='menuitem'][contains(.,'ASM7_Template')]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//div[@aria-label='Message Body' or @aria-label='Nội dung thư'][contains(.,'ASM7 template body')]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[contains(@aria-label,'Discard draft') or contains(@data-tooltip,'Discard draft')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_03_NAV_03: Kiem tra tat roi bat lai Templates</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/advanced</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>click</td><td>xpath=(//*[contains(text(),'Templates')]/following::*[normalize-space(text())='Disable'])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@gh='cm']</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//div[@aria-label='Message Body' or @aria-label='Nội dung thư']</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' and (@aria-label='More options' or @data-tooltip='More options')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=//*[@role='menuitem'][contains(.,'Templates')]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[contains(@aria-label,'Discard draft') or contains(@data-tooltip,'Discard draft')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/advanced</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>click</td><td>xpath=(//*[contains(text(),'Templates')]/following::*[normalize-space(text())='Enable'])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@gh='cm']</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//div[@aria-label='Message Body' or @aria-label='Nội dung thư']</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//*[@role='button' and (@aria-label='More options' or @data-tooltip='More options')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[@role='menuitem'][contains(.,'Templates')]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//*[contains(@aria-label,'Discard draft') or contains(@data-tooltip,'Discard draft')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_03_FUN_07: Ket thuc responder bang lien ket End now tren banner</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Vacation responder on'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>800</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//*[normalize-space(text())='Subject:']/following::input)[1]</td><td>ASM7 Out of office</td></tr>
+<tr><td>runScript</td><td>var n=document.evaluate(&quot;(//*[normalize-space(text())='Message:']/following::div[@contenteditable='true'])[1]&quot;,document,null,9,null).singleNodeValue;n.focus();document.execCommand('selectAll',false,null);document.execCommand('insertText',false,'Toi dang nghi phep, se phan hoi sau.');</td><td></td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//*[contains(text(),'End now')]</td><td>15000</td></tr>
+<tr><td>click</td><td>xpath=//*[contains(text(),'End now')]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=//*[contains(text(),'End now')]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">TC_GMAIL_03_FUN_06: Tat Vacation responder trong Settings</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Vacation responder on'])[1]</td><td></td></tr>
+<tr><td>pause</td><td>800</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//*[normalize-space(text())='Subject:']/following::input)[1]</td><td>ASM7 Out of office</td></tr>
+<tr><td>runScript</td><td>var n=document.evaluate(&quot;(//*[normalize-space(text())='Message:']/following::div[@contenteditable='true'])[1]&quot;,document,null,9,null).singleNodeValue;n.focus();document.execCommand('selectAll',false,null);document.execCommand('insertText',false,'Toi dang nghi phep, se phan hoi sau.');</td><td></td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#settings/general</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td>20000</td></tr>
+<tr><td>click</td><td>xpath=(//*[normalize-space(text())='Vacation responder off'])[1]</td><td></td></tr>
+<tr><td>click</td><td>xpath=//button[normalize-space(.)='Save Changes']</td><td></td></tr>
+<tr><td>pause</td><td>4000</td><td></td></tr>
+<tr><td>open</td><td>https://mail.google.com/mail/u/0/#inbox</td><td></td></tr>
+<tr><td>runScript</td><td>window.location.reload();</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>20000</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>verifyElementNotPresent</td><td>xpath=//*[contains(text(),'End now')]</td><td></td></tr>
+</tbody></table><br/>
+</body></html>
