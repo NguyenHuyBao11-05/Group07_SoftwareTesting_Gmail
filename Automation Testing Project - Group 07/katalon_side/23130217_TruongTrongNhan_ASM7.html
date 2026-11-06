@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="selenium.base" href="https://mail.google.com/" />
+<title>23130217_TruongTrongNhan_ASM7</title></head><body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">Reply_1: Kiem tra hien thi khung Tra loi (Reply)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))] | //div[@role='button' and (contains(@aria-label,'Trả lời') or contains(@data-tooltip,'Trả lời') or contains(@aria-label,'Reply') or contains(@data-tooltip,'Reply'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))] | //div[@role='button' and (contains(@aria-label,'Trả lời') or contains(@data-tooltip,'Trả lời') or contains(@aria-label,'Reply') or contains(@data-tooltip,'Reply'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//div[@role='textbox'])[last()]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[.//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')]]//div[@role='button'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">Reply_2: Gui thu tra loi voi noi dung hop le</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))] | //div[@role='button' and (contains(@aria-label,'Trả lời') or contains(@data-tooltip,'Trả lời') or contains(@aria-label,'Reply') or contains(@data-tooltip,'Reply'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))] | //div[@role='button' and (contains(@aria-label,'Trả lời') or contains(@data-tooltip,'Trả lời') or contains(@aria-label,'Reply') or contains(@data-tooltip,'Reply'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='textbox'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Đã gửi') or contains(text(),'Message sent') or contains(text(),'Hoàn tác') or contains(text(),'Undo') or contains(text(),'Đang gửi') or contains(text(),'Sending')] | //div[@role='main']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">Reply_3: Gui thu tra loi co them nguoi nhan CC va BCC</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))] | //div[@role='button' and (contains(@aria-label,'Trả lời') or contains(@data-tooltip,'Trả lời') or contains(@aria-label,'Reply') or contains(@data-tooltip,'Reply'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))] | //div[@role='button' and (contains(@aria-label,'Trả lời') or contains(@data-tooltip,'Trả lời') or contains(@aria-label,'Reply') or contains(@data-tooltip,'Reply'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='textbox'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Đã gửi') or contains(text(),'Message sent') or contains(text(),'Hoàn tác') or contains(text(),'Undo') or contains(text(),'Đang gửi') or contains(text(),'Sending')] | //div[@role='main']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">Reply_4: Gui thu tra loi co dinh kem tep tu may tinh</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))] | //div[@role='button' and (contains(@aria-label,'Trả lời') or contains(@data-tooltip,'Trả lời') or contains(@aria-label,'Reply') or contains(@data-tooltip,'Reply'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))] | //div[@role='button' and (contains(@aria-label,'Trả lời') or contains(@data-tooltip,'Trả lời') or contains(@aria-label,'Reply') or contains(@data-tooltip,'Reply'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//div[@command='Files' or contains(@aria-label,'Đính kèm') or contains(@data-tooltip,'Đính kèm') or contains(@aria-label,'Attach') or contains(@data-tooltip,'Attach')])[last()] | //div[@role='main']</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='textbox'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Đã gửi') or contains(text(),'Message sent') or contains(text(),'Hoàn tác') or contains(text(),'Undo') or contains(text(),'Đang gửi') or contains(text(),'Sending')] | //div[@role='main']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">Reply_5: Chinh sua Tieu de thu khi tra loi (Edit subject)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))] | //div[@role='button' and (contains(@aria-label,'Trả lời') or contains(@data-tooltip,'Trả lời') or contains(@aria-label,'Reply') or contains(@data-tooltip,'Reply'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))] | //div[@role='button' and (contains(@aria-label,'Trả lời') or contains(@data-tooltip,'Trả lời') or contains(@aria-label,'Reply') or contains(@data-tooltip,'Reply'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//div[@role='textbox'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Đã gửi') or contains(text(),'Message sent') or contains(text(),'Hoàn tác') or contains(text(),'Undo') or contains(text(),'Đang gửi') or contains(text(),'Sending')] | //div[@role='main']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">Reply_6: Nhan Gui tra loi khi xoa trong nguoi nhan Den</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))] | //div[@role='button' and (contains(@aria-label,'Trả lời') or contains(@data-tooltip,'Trả lời') or contains(@aria-label,'Reply') or contains(@data-tooltip,'Reply'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))] | //div[@role='button' and (contains(@aria-label,'Trả lời') or contains(@data-tooltip,'Trả lời') or contains(@aria-label,'Reply') or contains(@data-tooltip,'Reply'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//div[@role='textbox'])[last()]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[.//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')]]//div[@role='button'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">Reply_7: Huy bo thu nhap dang tra loi</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))] | //div[@role='button' and (contains(@aria-label,'Trả lời') or contains(@data-tooltip,'Trả lời') or contains(@aria-label,'Reply') or contains(@data-tooltip,'Reply'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))] | //div[@role='button' and (contains(@aria-label,'Trả lời') or contains(@data-tooltip,'Trả lời') or contains(@aria-label,'Reply') or contains(@data-tooltip,'Reply'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='textbox'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[.//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')]]//div[@role='button'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">Reply_8: Gui thu tra loi voi noi dung rat dai (5000 ky tu)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))] | //div[@role='button' and (contains(@aria-label,'Trả lời') or contains(@data-tooltip,'Trả lời') or contains(@aria-label,'Reply') or contains(@data-tooltip,'Reply'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))] | //div[@role='button' and (contains(@aria-label,'Trả lời') or contains(@data-tooltip,'Trả lời') or contains(@aria-label,'Reply') or contains(@data-tooltip,'Reply'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='textbox'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Đã gửi') or contains(text(),'Message sent') or contains(text(),'Hoàn tác') or contains(text(),'Undo') or contains(text(),'Đang gửi') or contains(text(),'Sending')] | //div[@role='main']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">Reply_9: Gui thu tra loi co chen lien ket (Insert link)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))] | //div[@role='button' and (contains(@aria-label,'Trả lời') or contains(@data-tooltip,'Trả lời') or contains(@aria-label,'Reply') or contains(@data-tooltip,'Reply'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))] | //div[@role='button' and (contains(@aria-label,'Trả lời') or contains(@data-tooltip,'Trả lời') or contains(@aria-label,'Reply') or contains(@data-tooltip,'Reply'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//div[@role='textbox'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Đã gửi') or contains(text(),'Message sent') or contains(text(),'Hoàn tác') or contains(text(),'Undo') or contains(text(),'Đang gửi') or contains(text(),'Sending')] | //div[@role='main']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">ReplyAll_1: Kiem tra hien thi khung Tra loi tat ca (Reply All)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (contains(.,'Trả lời tất cả') or contains(.,'Reply all'))] | //div[@role='button' and (contains(@aria-label,'Trả lời tất cả') or contains(@data-tooltip,'Trả lời tất cả') or contains(@aria-label,'Reply all') or contains(@data-tooltip,'Reply all') or contains(@aria-label,'Reply to all') or contains(@data-tooltip,'Reply to all'))] | //span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (contains(.,'Trả lời tất cả') or contains(.,'Reply all'))] | //div[@role='button' and (contains(@aria-label,'Trả lời tất cả') or contains(@data-tooltip,'Trả lời tất cả') or contains(@aria-label,'Reply all') or contains(@data-tooltip,'Reply all') or contains(@aria-label,'Reply to all') or contains(@data-tooltip,'Reply to all'))] | //span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//div[@role='textbox'])[last()]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[.//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')]]//div[@role='button'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">ReplyAll_2: Gui phan hoi bang chuc nang Tra loi tat ca</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (contains(.,'Trả lời tất cả') or contains(.,'Reply all'))] | //div[@role='button' and (contains(@aria-label,'Trả lời tất cả') or contains(@data-tooltip,'Trả lời tất cả') or contains(@aria-label,'Reply all') or contains(@data-tooltip,'Reply all') or contains(@aria-label,'Reply to all') or contains(@data-tooltip,'Reply to all'))] | //span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (contains(.,'Trả lời tất cả') or contains(.,'Reply all'))] | //div[@role='button' and (contains(@aria-label,'Trả lời tất cả') or contains(@data-tooltip,'Trả lời tất cả') or contains(@aria-label,'Reply all') or contains(@data-tooltip,'Reply all') or contains(@aria-label,'Reply to all') or contains(@data-tooltip,'Reply to all'))] | //span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='textbox'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Đã gửi') or contains(text(),'Message sent') or contains(text(),'Hoàn tác') or contains(text(),'Undo') or contains(text(),'Đang gửi') or contains(text(),'Sending')] | //div[@role='main']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">ReplyAll_3: Tra loi tat ca co them nguoi nhan Bcc</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (contains(.,'Trả lời tất cả') or contains(.,'Reply all'))] | //div[@role='button' and (contains(@aria-label,'Trả lời tất cả') or contains(@data-tooltip,'Trả lời tất cả') or contains(@aria-label,'Reply all') or contains(@data-tooltip,'Reply all') or contains(@aria-label,'Reply to all') or contains(@data-tooltip,'Reply to all'))] | //span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (contains(.,'Trả lời tất cả') or contains(.,'Reply all'))] | //div[@role='button' and (contains(@aria-label,'Trả lời tất cả') or contains(@data-tooltip,'Trả lời tất cả') or contains(@aria-label,'Reply all') or contains(@data-tooltip,'Reply all') or contains(@aria-label,'Reply to all') or contains(@data-tooltip,'Reply to all'))] | //span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='textbox'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Đã gửi') or contains(text(),'Message sent') or contains(text(),'Hoàn tác') or contains(text(),'Undo') or contains(text(),'Đang gửi') or contains(text(),'Sending')] | //div[@role='main']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">ReplyAll_4: Tra loi tat ca co dinh kem tep tu may tinh</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (contains(.,'Trả lời tất cả') or contains(.,'Reply all'))] | //div[@role='button' and (contains(@aria-label,'Trả lời tất cả') or contains(@data-tooltip,'Trả lời tất cả') or contains(@aria-label,'Reply all') or contains(@data-tooltip,'Reply all') or contains(@aria-label,'Reply to all') or contains(@data-tooltip,'Reply to all'))] | //span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (contains(.,'Trả lời tất cả') or contains(.,'Reply all'))] | //div[@role='button' and (contains(@aria-label,'Trả lời tất cả') or contains(@data-tooltip,'Trả lời tất cả') or contains(@aria-label,'Reply all') or contains(@data-tooltip,'Reply all') or contains(@aria-label,'Reply to all') or contains(@data-tooltip,'Reply to all'))] | //span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//div[@command='Files' or contains(@aria-label,'Đính kèm') or contains(@data-tooltip,'Đính kèm') or contains(@aria-label,'Attach') or contains(@data-tooltip,'Attach')])[last()] | //div[@role='main']</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Đã gửi') or contains(text(),'Message sent') or contains(text(),'Hoàn tác') or contains(text(),'Undo') or contains(text(),'Đang gửi') or contains(text(),'Sending')] | //div[@role='main']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">ReplyAll_5: Go mot nguoi nhan khoi muc Cc truoc khi gui Tra loi tat ca</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (contains(.,'Trả lời tất cả') or contains(.,'Reply all'))] | //div[@role='button' and (contains(@aria-label,'Trả lời tất cả') or contains(@data-tooltip,'Trả lời tất cả') or contains(@aria-label,'Reply all') or contains(@data-tooltip,'Reply all') or contains(@aria-label,'Reply to all') or contains(@data-tooltip,'Reply to all'))] | //span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (contains(.,'Trả lời tất cả') or contains(.,'Reply all'))] | //div[@role='button' and (contains(@aria-label,'Trả lời tất cả') or contains(@data-tooltip,'Trả lời tất cả') or contains(@aria-label,'Reply all') or contains(@data-tooltip,'Reply all') or contains(@aria-label,'Reply to all') or contains(@data-tooltip,'Reply to all'))] | //span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='textbox'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Đã gửi') or contains(text(),'Message sent') or contains(text(),'Hoàn tác') or contains(text(),'Undo') or contains(text(),'Đang gửi') or contains(text(),'Sending')] | //div[@role='main']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">ReplyAll_6: Gui Tra loi tat ca khi de trong noi dung</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (contains(.,'Trả lời tất cả') or contains(.,'Reply all'))] | //div[@role='button' and (contains(@aria-label,'Trả lời tất cả') or contains(@data-tooltip,'Trả lời tất cả') or contains(@aria-label,'Reply all') or contains(@data-tooltip,'Reply all') or contains(@aria-label,'Reply to all') or contains(@data-tooltip,'Reply to all'))] | //span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (contains(.,'Trả lời tất cả') or contains(.,'Reply all'))] | //div[@role='button' and (contains(@aria-label,'Trả lời tất cả') or contains(@data-tooltip,'Trả lời tất cả') or contains(@aria-label,'Reply all') or contains(@data-tooltip,'Reply all') or contains(@aria-label,'Reply to all') or contains(@data-tooltip,'Reply to all'))] | //span[@role='link' and (normalize-space(.)='Trả lời' or normalize-space(.)='Reply' or contains(.,'Trả lời') or contains(.,'Reply'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Đã gửi') or contains(text(),'Message sent') or contains(text(),'Hoàn tác') or contains(text(),'Undo') or contains(text(),'Đang gửi') or contains(text(),'Sending')] | //div[@role='main']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">Forward_1: Kiem tra hien thi khung Chuyen tiep (Forward)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Chuyển tiếp' or normalize-space(.)='Forward' or contains(.,'Chuyển tiếp') or contains(.,'Forward'))] | //div[@role='button' and (contains(@aria-label,'Chuyển tiếp') or contains(@data-tooltip,'Chuyển tiếp') or contains(@aria-label,'Forward') or contains(@data-tooltip,'Forward'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Chuyển tiếp' or normalize-space(.)='Forward' or contains(.,'Chuyển tiếp') or contains(.,'Forward'))] | //div[@role='button' and (contains(@aria-label,'Chuyển tiếp') or contains(@data-tooltip,'Chuyển tiếp') or contains(@aria-label,'Forward') or contains(@data-tooltip,'Forward'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(//div[@role='textbox'])[last()]</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[.//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')]]//div[@role='button'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">Forward_2: Chuyen tiep thu den 1 nguoi nhan hop le</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Chuyển tiếp' or normalize-space(.)='Forward' or contains(.,'Chuyển tiếp') or contains(.,'Forward'))] | //div[@role='button' and (contains(@aria-label,'Chuyển tiếp') or contains(@data-tooltip,'Chuyển tiếp') or contains(@aria-label,'Forward') or contains(@data-tooltip,'Forward'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Chuyển tiếp' or normalize-space(.)='Forward' or contains(.,'Chuyển tiếp') or contains(.,'Forward'))] | //div[@role='button' and (contains(@aria-label,'Chuyển tiếp') or contains(@data-tooltip,'Chuyển tiếp') or contains(@aria-label,'Forward') or contains(@data-tooltip,'Forward'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td>nahnnhan04@gmail.com</td></tr>
+<tr><td>sendKeys</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td>${KEY_ENTER}</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Đã gửi') or contains(text(),'Message sent') or contains(text(),'Hoàn tác') or contains(text(),'Undo') or contains(text(),'Đang gửi') or contains(text(),'Sending')] | //div[@role='main']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">Forward_3: Chuyen tiep thu den nhieu nguoi nhan cung luc</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Chuyển tiếp' or normalize-space(.)='Forward' or contains(.,'Chuyển tiếp') or contains(.,'Forward'))] | //div[@role='button' and (contains(@aria-label,'Chuyển tiếp') or contains(@data-tooltip,'Chuyển tiếp') or contains(@aria-label,'Forward') or contains(@data-tooltip,'Forward'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Chuyển tiếp' or normalize-space(.)='Forward' or contains(.,'Chuyển tiếp') or contains(.,'Forward'))] | //div[@role='button' and (contains(@aria-label,'Chuyển tiếp') or contains(@data-tooltip,'Chuyển tiếp') or contains(@aria-label,'Forward') or contains(@data-tooltip,'Forward'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td>nahnnhan04@gmail.com</td></tr>
+<tr><td>sendKeys</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td>${KEY_ENTER}</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td>23130217@st.hcmuaf.edu.vn</td></tr>
+<tr><td>sendKeys</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td>${KEY_ENTER}</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Đã gửi') or contains(text(),'Message sent') or contains(text(),'Hoàn tác') or contains(text(),'Undo') or contains(text(),'Đang gửi') or contains(text(),'Sending')] | //div[@role='main']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">Forward_4: Chuyen tiep thu voi dia chi email sai dinh dang</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Chuyển tiếp' or normalize-space(.)='Forward' or contains(.,'Chuyển tiếp') or contains(.,'Forward'))] | //div[@role='button' and (contains(@aria-label,'Chuyển tiếp') or contains(@data-tooltip,'Chuyển tiếp') or contains(@aria-label,'Forward') or contains(@data-tooltip,'Forward'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Chuyển tiếp' or normalize-space(.)='Forward' or contains(.,'Chuyển tiếp') or contains(.,'Forward'))] | //div[@role='button' and (contains(@aria-label,'Chuyển tiếp') or contains(@data-tooltip,'Chuyển tiếp') or contains(@aria-label,'Forward') or contains(@data-tooltip,'Forward'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td>email_sai@@com</td></tr>
+<tr><td>sendKeys</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td>${KEY_ENTER}</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//div[@role='alertdialog' or @role='dialog'] | //*[contains(text(),'Lỗi') or contains(text(),'Error') or contains(text(),'Vui lòng') or contains(text(),'Please')] | //div[@role='main']</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='alertdialog' or @role='dialog']//button | //div[@role='alertdialog' or @role='dialog']//div[@role='button'] | //button[@name='ok'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[.//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')]]//div[@role='button'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">Forward_5: Nhan Gui chuyen tiep khi bo trong o Den (To)</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Chuyển tiếp' or normalize-space(.)='Forward' or contains(.,'Chuyển tiếp') or contains(.,'Forward'))] | //div[@role='button' and (contains(@aria-label,'Chuyển tiếp') or contains(@data-tooltip,'Chuyển tiếp') or contains(@aria-label,'Forward') or contains(@data-tooltip,'Forward'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Chuyển tiếp' or normalize-space(.)='Forward' or contains(.,'Chuyển tiếp') or contains(.,'Forward'))] | //div[@role='button' and (contains(@aria-label,'Chuyển tiếp') or contains(@data-tooltip,'Chuyển tiếp') or contains(@aria-label,'Forward') or contains(@data-tooltip,'Forward'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//div[@role='alertdialog' or @role='dialog'] | //*[contains(text(),'Lỗi') or contains(text(),'Error') or contains(text(),'Vui lòng') or contains(text(),'Please')] | //div[@role='main']</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='alertdialog' or @role='dialog']//button | //div[@role='alertdialog' or @role='dialog']//div[@role='button'] | //button[@name='ok'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tr[.//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')]]//div[@role='button'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">Forward_6: Xoa tep dinh kem goc truoc khi Chuyen tiep</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Chuyển tiếp' or normalize-space(.)='Forward' or contains(.,'Chuyển tiếp') or contains(.,'Forward'))] | //div[@role='button' and (contains(@aria-label,'Chuyển tiếp') or contains(@data-tooltip,'Chuyển tiếp') or contains(@aria-label,'Forward') or contains(@data-tooltip,'Forward'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Chuyển tiếp' or normalize-space(.)='Forward' or contains(.,'Chuyển tiếp') or contains(.,'Forward'))] | //div[@role='button' and (contains(@aria-label,'Chuyển tiếp') or contains(@data-tooltip,'Chuyển tiếp') or contains(@aria-label,'Forward') or contains(@data-tooltip,'Forward'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td>nahnnhan04@gmail.com</td></tr>
+<tr><td>sendKeys</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td>${KEY_ENTER}</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Đã gửi') or contains(text(),'Message sent') or contains(text(),'Hoàn tác') or contains(text(),'Undo') or contains(text(),'Đang gửi') or contains(text(),'Sending')] | //div[@role='main']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">Forward_7: Chuyen tiep thu co them nguoi nhan CC va BCC</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Chuyển tiếp' or normalize-space(.)='Forward' or contains(.,'Chuyển tiếp') or contains(.,'Forward'))] | //div[@role='button' and (contains(@aria-label,'Chuyển tiếp') or contains(@data-tooltip,'Chuyển tiếp') or contains(@aria-label,'Forward') or contains(@data-tooltip,'Forward'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Chuyển tiếp' or normalize-space(.)='Forward' or contains(.,'Chuyển tiếp') or contains(.,'Forward'))] | //div[@role='button' and (contains(@aria-label,'Chuyển tiếp') or contains(@data-tooltip,'Chuyển tiếp') or contains(@aria-label,'Forward') or contains(@data-tooltip,'Forward'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td>nahnnhan04@gmail.com</td></tr>
+<tr><td>sendKeys</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td>${KEY_ENTER}</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td>23130217@st.hcmuaf.edu.vn</td></tr>
+<tr><td>sendKeys</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td>${KEY_ENTER}</td></tr>
+<tr><td>pause</td><td>1500</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Đã gửi') or contains(text(),'Message sent') or contains(text(),'Hoàn tác') or contains(text(),'Undo') or contains(text(),'Đang gửi') or contains(text(),'Sending')] | //div[@role='main']</td><td></td></tr>
+</tbody></table><br/>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead><tr><td rowspan="1" colspan="3">Forward_8: Chinh sua noi dung truoc khi chuyen tiep thu</td></tr></thead><tbody>
+<tr><td>open</td><td>https://mail.google.com/</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//tr[contains(@class,'zA')])[1]</td><td></td></tr>
+<tr><td>pause</td><td>2500</td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Chuyển tiếp' or normalize-space(.)='Forward' or contains(.,'Chuyển tiếp') or contains(.,'Forward'))] | //div[@role='button' and (contains(@aria-label,'Chuyển tiếp') or contains(@data-tooltip,'Chuyển tiếp') or contains(@aria-label,'Forward') or contains(@data-tooltip,'Forward'))])[last()]</td><td>10000</td></tr>
+<tr><td>click</td><td>xpath=(//span[@role='link' and (normalize-space(.)='Chuyển tiếp' or normalize-space(.)='Forward' or contains(.,'Chuyển tiếp') or contains(.,'Forward'))] | //div[@role='button' and (contains(@aria-label,'Chuyển tiếp') or contains(@data-tooltip,'Chuyển tiếp') or contains(@aria-label,'Forward') or contains(@data-tooltip,'Forward'))])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>2000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td></td></tr>
+<tr><td>type</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td>23130217@st.hcmuaf.edu.vn</td></tr>
+<tr><td>sendKeys</td><td>xpath=(//input[contains(@aria-label,'To') or contains(@aria-label,'Đến') or contains(@aria-label,'Người nhận') or @peoplekit-id])[last()]</td><td>${KEY_ENTER}</td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@role='textbox'])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>1000</td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[text()='Send' or text()='Gửi' or contains(@data-tooltip,'Send') or contains(@data-tooltip,'Gửi')])[last()]</td><td></td></tr>
+<tr><td>pause</td><td>3000</td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=//*[contains(text(),'Đã gửi') or contains(text(),'Message sent') or contains(text(),'Hoàn tác') or contains(text(),'Undo') or contains(text(),'Đang gửi') or contains(text(),'Sending')] | //div[@role='main']</td><td></td></tr>
+</tbody></table>
+</body></html>
